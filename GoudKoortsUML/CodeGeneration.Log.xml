@@ -1,0 +1,78 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml-stylesheet type="text/xsl" href="file:///C:/PROGRAM FILES (X86)/MICROSOFT VISUAL STUDIO 14.0/COMMON7/IDE/EXTENSIONS/MICROSOFT/ARCHITECTURE TOOLS/EXTENSIBILITY/Logging/CodeGenLog.xslt"?>
+<Log xmlns="http://schemas.microsoft.com/VisualStudio/2010/CodeGen.RE.Log" Label="Code Generation/Text Transformation Log">
+  <MessageClass Name="Message" Label="Message" Option="Show informational messages" />
+  <MessageClass Name="Warning" Label="Warning" Option="Show warnings" />
+  <MessageClass Name="Error" Label="Error" Option="Show errors" />
+  <MessageClass Name="Property" Label="Property" Option="Show metadata" />
+  <MessageClass Name="Diagnostic" Label="Message" Option="Show diagnostic messages" />
+  <Message Timestamp="2017-10-23T15:11:51" Importance="High" Text="Code generation or text transformation started." />
+  <Message Timestamp="2017-10-23T15:11:51" Importance="Diagnostic" Text="Name = ClassTemplate" />
+  <Message Timestamp="2017-10-23T15:11:51" Importance="Diagnostic" Text="Overwrite = True" />
+  <Message Timestamp="2017-10-23T15:11:51" Importance="Diagnostic" Text="ProjectPath = ..\GoudKoortsUMLLib\GoudKoortsUMLLib.csproj" />
+  <Message Timestamp="2017-10-23T15:11:51" Importance="Diagnostic" Text="TargetDirectory = GeneratedCode\{PackageStructure}" />
+  <Message Timestamp="2017-10-23T15:11:51" Importance="Diagnostic" Text="TargetName = {Name}" />
+  <Message Timestamp="2017-10-23T15:11:51" Importance="Diagnostic" Text="TemplateFilePath = C:\PROGRAM FILES (X86)\MICROSOFT VISUAL STUDIO 14.0\COMMON7\IDE\EXTENSIONS\MICROSOFT\ARCHITECTURE TOOLS\EXTENSIBILITY\Templates\Text\ClassTemplate.t4" />
+  <Message Timestamp="2017-10-23T15:11:51" Importance="Diagnostic" Text="ResolvedTemplateFilePath = C:\PROGRAM FILES (X86)\MICROSOFT VISUAL STUDIO 14.0\COMMON7\IDE\EXTENSIONS\MICROSOFT\ARCHITECTURE TOOLS\EXTENSIBILITY\Templates\Text\ClassTemplate.t4" />
+  <Message Timestamp="2017-10-23T15:11:51" Importance="Medium" Text="GoudKoortsUML's Text Template Binding: 'ClassTemplate' will apply ClassTemplate.t4 to: 'GoudKoortsUML::Ship' -  (Class), 'GoudKoortsUML::Moveable' -  (Class), 'GoudKoortsUML::Track' -  (Class), 'GoudKoortsUML::Dock' -  (Class), 'GoudKoortsUML::Cart' -  (Class), 'GoudKoortsUML::NormalTrack' -  (Class), 'GoudKoortsUML::Game' -  (Class), 'GoudKoortsUML::RangeArea' -  (Class), 'GoudKoortsUML::Output' -  (Class), 'GoudKoortsUML::Warehouse' -  (Class), 'GoudKoortsUML::Merge' -  (Class), 'GoudKoortsUML::Input' -  (Class), 'GoudKoortsUML::GameController' -  (Class), 'GoudKoortsUML::Switch' -  (Class), 'GoudKoortsUML::Split' -  (Class) " />
+  <Message Timestamp="2017-10-23T15:12:29" Importance="Medium" Text="Project Added: C:\Users\Rudolf\Google Drive\School\AVANS 17_18\Mod3\GoudKoorts\GoudkoortsRP\GoudKoortsUMLLib\GoudKoortsUMLLib.csproj" />
+  <Message Timestamp="2017-10-23T15:12:29" Importance="Medium" Text="'GoudKoortsUML::Ship' -  (Class) : success (file created) - C:\Users\Rudolf\Google Drive\School\AVANS 17_18\Mod3\GoudKoorts\GoudkoortsRP\GoudKoortsUMLLib\GeneratedCode\Ship.cs" />
+  <Message Timestamp="2017-10-23T15:12:30" Importance="Medium" Text="'GoudKoortsUML::Moveable' -  (Class) : success (file created) - C:\Users\Rudolf\Google Drive\School\AVANS 17_18\Mod3\GoudKoorts\GoudkoortsRP\GoudKoortsUMLLib\GeneratedCode\Moveable.cs" />
+  <Message Timestamp="2017-10-23T15:12:30" Importance="Medium" Text="'GoudKoortsUML::Track' -  (Class) : success (file created) - C:\Users\Rudolf\Google Drive\School\AVANS 17_18\Mod3\GoudKoorts\GoudkoortsRP\GoudKoortsUMLLib\GeneratedCode\Track.cs" />
+  <Message Timestamp="2017-10-23T15:12:30" Importance="Medium" Text="'GoudKoortsUML::Dock' -  (Class) : success (file created) - C:\Users\Rudolf\Google Drive\School\AVANS 17_18\Mod3\GoudKoorts\GoudkoortsRP\GoudKoortsUMLLib\GeneratedCode\Dock.cs" />
+  <Message Timestamp="2017-10-23T15:12:30" Importance="Medium" Text="'GoudKoortsUML::Cart' -  (Class) : success (file created) - C:\Users\Rudolf\Google Drive\School\AVANS 17_18\Mod3\GoudKoorts\GoudkoortsRP\GoudKoortsUMLLib\GeneratedCode\Cart.cs" />
+  <Message Timestamp="2017-10-23T15:12:31" Importance="Medium" Text="'GoudKoortsUML::NormalTrack' -  (Class) : success (file created) - C:\Users\Rudolf\Google Drive\School\AVANS 17_18\Mod3\GoudKoorts\GoudkoortsRP\GoudKoortsUMLLib\GeneratedCode\NormalTrack.cs" />
+  <Message Timestamp="2017-10-23T15:12:31" Importance="Medium" Text="'GoudKoortsUML::Game' -  (Class) : success (file created) - C:\Users\Rudolf\Google Drive\School\AVANS 17_18\Mod3\GoudKoorts\GoudkoortsRP\GoudKoortsUMLLib\GeneratedCode\Game.cs" />
+  <Message Timestamp="2017-10-23T15:12:31" Importance="Medium" Text="'GoudKoortsUML::RangeArea' -  (Class) : success (file created) - C:\Users\Rudolf\Google Drive\School\AVANS 17_18\Mod3\GoudKoorts\GoudkoortsRP\GoudKoortsUMLLib\GeneratedCode\RangeArea.cs" />
+  <Message Timestamp="2017-10-23T15:12:31" Importance="Medium" Text="'GoudKoortsUML::Output' -  (Class) : success (file created) - C:\Users\Rudolf\Google Drive\School\AVANS 17_18\Mod3\GoudKoorts\GoudkoortsRP\GoudKoortsUMLLib\GeneratedCode\Output.cs" />
+  <Message Timestamp="2017-10-23T15:12:32" Importance="Medium" Text="'GoudKoortsUML::Warehouse' -  (Class) : success (file created) - C:\Users\Rudolf\Google Drive\School\AVANS 17_18\Mod3\GoudKoorts\GoudkoortsRP\GoudKoortsUMLLib\GeneratedCode\Warehouse.cs" />
+  <Message Timestamp="2017-10-23T15:12:32" Importance="Medium" Text="'GoudKoortsUML::Merge' -  (Class) : success (file created) - C:\Users\Rudolf\Google Drive\School\AVANS 17_18\Mod3\GoudKoorts\GoudkoortsRP\GoudKoortsUMLLib\GeneratedCode\Merge.cs" />
+  <Message Timestamp="2017-10-23T15:12:32" Importance="Medium" Text="'GoudKoortsUML::Input' -  (Class) : success (file created) - C:\Users\Rudolf\Google Drive\School\AVANS 17_18\Mod3\GoudKoorts\GoudkoortsRP\GoudKoortsUMLLib\GeneratedCode\Input.cs" />
+  <Message Timestamp="2017-10-23T15:12:32" Importance="Medium" Text="'GoudKoortsUML::GameController' -  (Class) : success (file created) - C:\Users\Rudolf\Google Drive\School\AVANS 17_18\Mod3\GoudKoorts\GoudkoortsRP\GoudKoortsUMLLib\GeneratedCode\GameController.cs" />
+  <Message Timestamp="2017-10-23T15:12:33" Importance="Medium" Text="'GoudKoortsUML::Switch' -  (Class) : success (file created) - C:\Users\Rudolf\Google Drive\School\AVANS 17_18\Mod3\GoudKoorts\GoudkoortsRP\GoudKoortsUMLLib\GeneratedCode\Switch.cs" />
+  <Message Timestamp="2017-10-23T15:12:33" Importance="Medium" Text="'GoudKoortsUML::Split' -  (Class) : success (file created) - C:\Users\Rudolf\Google Drive\School\AVANS 17_18\Mod3\GoudKoorts\GoudkoortsRP\GoudKoortsUMLLib\GeneratedCode\Split.cs" />
+  <Message Timestamp="2017-10-23T15:12:33" Importance="Diagnostic" Text="Name = StructTemplate" />
+  <Message Timestamp="2017-10-23T15:12:33" Importance="Diagnostic" Text="Overwrite = True" />
+  <Message Timestamp="2017-10-23T15:12:33" Importance="Diagnostic" Text="ProjectPath = ..\GoudKoortsUMLLib\GoudKoortsUMLLib.csproj" />
+  <Message Timestamp="2017-10-23T15:12:33" Importance="Diagnostic" Text="TargetDirectory = GeneratedCode\{PackageStructure}" />
+  <Message Timestamp="2017-10-23T15:12:33" Importance="Diagnostic" Text="TargetName = {Name}" />
+  <Message Timestamp="2017-10-23T15:12:33" Importance="Diagnostic" Text="TemplateFilePath = C:\PROGRAM FILES (X86)\MICROSOFT VISUAL STUDIO 14.0\COMMON7\IDE\EXTENSIONS\MICROSOFT\ARCHITECTURE TOOLS\EXTENSIBILITY\Templates\Text\StructTemplate.t4" />
+  <Message Timestamp="2017-10-23T15:12:33" Importance="Diagnostic" Text="ResolvedTemplateFilePath = C:\PROGRAM FILES (X86)\MICROSOFT VISUAL STUDIO 14.0\COMMON7\IDE\EXTENSIONS\MICROSOFT\ARCHITECTURE TOOLS\EXTENSIBILITY\Templates\Text\StructTemplate.t4" />
+  <Message Timestamp="2017-10-23T15:12:33" Importance="Medium" Text="GoudKoortsUML's Text Template Binding: 'StructTemplate' will apply StructTemplate.t4 to: 'GoudKoortsUML::Ship' -  (Class), 'GoudKoortsUML::Moveable' -  (Class), 'GoudKoortsUML::Track' -  (Class), 'GoudKoortsUML::Dock' -  (Class), 'GoudKoortsUML::Cart' -  (Class), 'GoudKoortsUML::NormalTrack' -  (Class), 'GoudKoortsUML::Game' -  (Class), 'GoudKoortsUML::RangeArea' -  (Class), 'GoudKoortsUML::Output' -  (Class), 'GoudKoortsUML::Warehouse' -  (Class), 'GoudKoortsUML::Merge' -  (Class), 'GoudKoortsUML::Input' -  (Class), 'GoudKoortsUML::GameController' -  (Class), 'GoudKoortsUML::Switch' -  (Class), 'GoudKoortsUML::Split' -  (Class) " />
+  <Message Timestamp="2017-10-23T15:12:33" Importance="Diagnostic" Text="'GoudKoortsUML::Ship' -  (Class): no file generated because the 'AppliesToElement' method of the template 'StructTemplate.t4' evaluated to false." />
+  <Message Timestamp="2017-10-23T15:12:33" Importance="Diagnostic" Text="'GoudKoortsUML::Moveable' -  (Class): no file generated because the 'AppliesToElement' method of the template 'StructTemplate.t4' evaluated to false." />
+  <Message Timestamp="2017-10-23T15:12:33" Importance="Diagnostic" Text="'GoudKoortsUML::Track' -  (Class): no file generated because the 'AppliesToElement' method of the template 'StructTemplate.t4' evaluated to false." />
+  <Message Timestamp="2017-10-23T15:12:33" Importance="Diagnostic" Text="'GoudKoortsUML::Dock' -  (Class): no file generated because the 'AppliesToElement' method of the template 'StructTemplate.t4' evaluated to false." />
+  <Message Timestamp="2017-10-23T15:12:33" Importance="Diagnostic" Text="'GoudKoortsUML::Cart' -  (Class): no file generated because the 'AppliesToElement' method of the template 'StructTemplate.t4' evaluated to false." />
+  <Message Timestamp="2017-10-23T15:12:33" Importance="Diagnostic" Text="'GoudKoortsUML::NormalTrack' -  (Class): no file generated because the 'AppliesToElement' method of the template 'StructTemplate.t4' evaluated to false." />
+  <Message Timestamp="2017-10-23T15:12:33" Importance="Diagnostic" Text="'GoudKoortsUML::Game' -  (Class): no file generated because the 'AppliesToElement' method of the template 'StructTemplate.t4' evaluated to false." />
+  <Message Timestamp="2017-10-23T15:12:33" Importance="Diagnostic" Text="'GoudKoortsUML::RangeArea' -  (Class): no file generated because the 'AppliesToElement' method of the template 'StructTemplate.t4' evaluated to false." />
+  <Message Timestamp="2017-10-23T15:12:33" Importance="Diagnostic" Text="'GoudKoortsUML::Output' -  (Class): no file generated because the 'AppliesToElement' method of the template 'StructTemplate.t4' evaluated to false." />
+  <Message Timestamp="2017-10-23T15:12:33" Importance="Diagnostic" Text="'GoudKoortsUML::Warehouse' -  (Class): no file generated because the 'AppliesToElement' method of the template 'StructTemplate.t4' evaluated to false." />
+  <Message Timestamp="2017-10-23T15:12:33" Importance="Diagnostic" Text="'GoudKoortsUML::Merge' -  (Class): no file generated because the 'AppliesToElement' method of the template 'StructTemplate.t4' evaluated to false." />
+  <Message Timestamp="2017-10-23T15:12:34" Importance="Diagnostic" Text="'GoudKoortsUML::Input' -  (Class): no file generated because the 'AppliesToElement' method of the template 'StructTemplate.t4' evaluated to false." />
+  <Message Timestamp="2017-10-23T15:12:34" Importance="Diagnostic" Text="'GoudKoortsUML::GameController' -  (Class): no file generated because the 'AppliesToElement' method of the template 'StructTemplate.t4' evaluated to false." />
+  <Message Timestamp="2017-10-23T15:12:34" Importance="Diagnostic" Text="'GoudKoortsUML::Switch' -  (Class): no file generated because the 'AppliesToElement' method of the template 'StructTemplate.t4' evaluated to false." />
+  <Message Timestamp="2017-10-23T15:12:34" Importance="Diagnostic" Text="'GoudKoortsUML::Split' -  (Class): no file generated because the 'AppliesToElement' method of the template 'StructTemplate.t4' evaluated to false." />
+  <Message Timestamp="2017-10-23T15:12:34" Importance="Diagnostic" Text="The selection included 19 elements which were not bound to a template." />
+  <Message Timestamp="2017-10-23T15:12:34" Importance="Diagnostic" Text="'GoudKoortsUML::' -  (Association): no bound template." />
+  <Message Timestamp="2017-10-23T15:12:34" Importance="Diagnostic" Text="'13f96dd6-bba7-4a32-9293-daa113eb5f40' -  (Generalization): no bound template." />
+  <Message Timestamp="2017-10-23T15:12:34" Importance="Diagnostic" Text="'20fd8bc4-c47a-4645-adae-7617241be456' -  (Generalization): no bound template." />
+  <Message Timestamp="2017-10-23T15:12:34" Importance="Diagnostic" Text="'GoudKoortsUML::' -  (Association): no bound template." />
+  <Message Timestamp="2017-10-23T15:12:34" Importance="Diagnostic" Text="'1bd109ca-c7a5-40d1-a157-62c00b5c1110' -  (Generalization): no bound template." />
+  <Message Timestamp="2017-10-23T15:12:34" Importance="Diagnostic" Text="'GoudKoortsUML::' -  (Association): no bound template." />
+  <Message Timestamp="2017-10-23T15:12:34" Importance="Diagnostic" Text="'GoudKoortsUML::' -  (Association): no bound template." />
+  <Message Timestamp="2017-10-23T15:12:34" Importance="Diagnostic" Text="'6c822782-d7b0-4297-ac37-e08d4e95b57a' -  (Generalization): no bound template." />
+  <Message Timestamp="2017-10-23T15:12:34" Importance="Diagnostic" Text="'0292cf4e-95a3-4cc4-b080-bd3ee580daf7' -  (Generalization): no bound template." />
+  <Message Timestamp="2017-10-23T15:12:34" Importance="Diagnostic" Text="'GoudKoortsUML::' -  (Association): no bound template." />
+  <Message Timestamp="2017-10-23T15:12:34" Importance="Diagnostic" Text="'GoudKoortsUML::' -  (Association): no bound template." />
+  <Message Timestamp="2017-10-23T15:12:34" Importance="Diagnostic" Text="'268370a6-56fd-4124-86d4-c11e0f24a53e' -  (Generalization): no bound template." />
+  <Message Timestamp="2017-10-23T15:12:34" Importance="Diagnostic" Text="'22408e77-8f2d-458a-b125-f1423f52bf9c' -  (Generalization): no bound template." />
+  <Message Timestamp="2017-10-23T15:12:34" Importance="Diagnostic" Text="'GoudKoortsUML::' -  (Association): no bound template." />
+  <Message Timestamp="2017-10-23T15:12:34" Importance="Diagnostic" Text="'GoudKoortsUML::' -  (Association): no bound template." />
+  <Message Timestamp="2017-10-23T15:12:34" Importance="Diagnostic" Text="'GoudKoortsUML::' -  (Association): no bound template." />
+  <Message Timestamp="2017-10-23T15:12:34" Importance="Diagnostic" Text="'d645729a-33c4-44f3-ad3e-cb64e566ca52' -  (Generalization): no bound template." />
+  <Message Timestamp="2017-10-23T15:12:34" Importance="Diagnostic" Text="'GoudKoortsUML::' -  (Association): no bound template." />
+  <Message Timestamp="2017-10-23T15:12:34" Importance="Diagnostic" Text="'50cdf89b-80f6-45f4-bf7c-d4b17a235871' -  (Generalization): no bound template." />
+  <Message Timestamp="2017-10-23T15:12:34" Importance="High" Text="Code generation complete. Errors: 0. Warnings: 0." />
+</Log>
