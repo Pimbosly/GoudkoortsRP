@@ -11,7 +11,16 @@ using System.Text;
 
 public class GameController
 {
-	public virtual Game Game
+
+    Output output = new Output();
+    Input input = new Input();
+    Boolean inGame = false;
+
+    public GameController()
+    {
+        StartGame();
+    }
+    public virtual Game Game
 	{
 		get;
 		set;
@@ -31,13 +40,50 @@ public class GameController
 
 	public virtual void StartGame()
 	{
-		throw new System.NotImplementedException();
-	}
+        Boolean mainMenu = true;
+        output.printMain();
+        while (mainMenu)
+        {
+            ConsoleKeyInfo cki = input.askInputKey("> Press a key to start the game");
+            if (cki.KeyChar == cki.KeyChar)
+            {
+                mainMenu = false;
+                generateLevel();
+            }
+        }
+
+    }
 
 	public virtual void generateLevel()
 	{
-		throw new System.NotImplementedException();
-	}
+        output.loadLevel();
+        inGame = true;
+           
+    }
+    public void handleInput(ConsoleKey input)
+    {
+        if (inGame)
+        {
+            switch (input)
+            {
+                case ConsoleKey.NumPad1:
+                    Console.WriteLine('1');
+                    break;
+                case ConsoleKey.NumPad2:
+                    Console.WriteLine('2');
+                    break;
+                case ConsoleKey.NumPad3:
+                    Console.WriteLine('3');
+                    break;
+                case ConsoleKey.NumPad4:
+                    Console.WriteLine('4');
+                    break;
+                case ConsoleKey.NumPad5:
+                    Console.WriteLine('5');
+                    break;
+            }
+        }
+    }
 
 }
 

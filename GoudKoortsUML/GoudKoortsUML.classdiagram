@@ -72,14 +72,6 @@
       </propertyInstances>
     </stereotypeInstance>
   </appliedStereotypesInternal>
-  <profileInstances>
-    <packageHasProfileInstances Id="d2ddfd3b-7013-4db3-abfa-35fc684935c6">
-      <profileInstance Id="81b7cfea-c35e-462b-99cd-28d455ed2a3a" name="CSharpProfile">
-        <elementDefinition Id="a5b64ed4-1ca2-4f83-8682-0f626b2c5c3a" />
-      </profileInstance>
-      <elementDefinition Id="c4eae4ae-ce0e-4956-b7fa-f208deebcfca" />
-    </packageHasProfileInstances>
-  </profileInstances>
   <packagedElements>
     <logicalClassDesignerModelHasTypes>
       <class Id="fa411c8f-e8f3-4116-b7dc-c94bec5856bd" name="Cart" isAbstract="false" isLeaf="false" isActiveClass="false">
@@ -2434,6 +2426,12 @@
           <elementDefinition Id="532ea607-fb19-44b8-8502-3351b05452be" />
         </profileInstance>
         <elementDefinition Id="29349502-908c-4fda-9054-c48619c59ed0" />
+      </packageHasProfileInstances>
+      <packageHasProfileInstances Id="d2ddfd3b-7013-4db3-abfa-35fc684935c6">
+        <profileInstance Id="81b7cfea-c35e-462b-99cd-28d455ed2a3a" name="CSharpProfile">
+          <elementDefinition Id="a5b64ed4-1ca2-4f83-8682-0f626b2c5c3a" />
+        </profileInstance>
+        <elementDefinition Id="c4eae4ae-ce0e-4956-b7fa-f208deebcfca" />
       </packageHasProfileInstances>
     </profileInstances>
   </package>

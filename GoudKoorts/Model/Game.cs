@@ -11,17 +11,11 @@ using System.Text;
 
 public class Game
 {
-	public virtual int Score
-	{
-		get;
-		set;
-	}
+    Output output = new Output();
+    Input input = new Input();
 
-	public virtual bool gameOver
-	{
-		get;
-		set;
-	}
+    public Boolean gameOver = false;
+    public int Score = 0;
 
 	public virtual IEnumerable<Warehouse> Warehouse
 	{
