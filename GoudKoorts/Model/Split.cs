@@ -17,10 +17,17 @@ public class Split : Switch
 		set;
 	}
 
-	public override void Swap()
-	{
-		throw new System.NotImplementedException();
-	}
+    public override char Icon()
+    {
+        if(isOpen)
+        {
+            return '/';
+        }
+        else
+        {
+            return '\\';
+        }
+    }
 
 }
 

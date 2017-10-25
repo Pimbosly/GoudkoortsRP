@@ -11,11 +11,17 @@ using System.Text;
 
 public class NormalTrack : Track
 {
-	public virtual object Symbol
-	{
-		get;
-		set;
-	}
 
+    public override char Icon()
+    {
+        if(Moveable.Count == 0)
+        {
+            return '-';
+        }
+        else
+        {
+            return Moveable[0].Icon();
+        }
+    }
 }
 

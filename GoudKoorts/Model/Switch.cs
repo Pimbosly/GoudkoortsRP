@@ -11,7 +11,12 @@ using System.Text;
 
 public abstract class Switch : Track
 {
-	public virtual object Symbol
+    public virtual bool isOpen
+    {
+        get;
+        set;
+    }
+    public virtual object Symbol
     {
 		get;
 		set;
@@ -19,8 +24,15 @@ public abstract class Switch : Track
 
 	public virtual void Swap()
 	{
-		throw new System.NotImplementedException();
-	}
+        if (isOpen)
+        {
+            isOpen = false;
+        }
+        else
+        {
+            isOpen = true;
+        }
+    }
 
 }
 

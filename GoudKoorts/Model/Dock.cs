@@ -16,7 +16,8 @@ public class Dock : Track
 		get;
 		set;
 	}
-    public char Icon()
+
+    public override char Icon()
     {
         if (Moveable != null)
         {

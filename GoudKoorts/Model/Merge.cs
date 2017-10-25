@@ -17,10 +17,23 @@ public class Merge : Switch
 		set;
 	}
 
-	public override void Swap()
-	{
-		throw new System.NotImplementedException();
-	}
-
+    public override char Icon()
+    {
+        if (Moveable.Count == 0)
+        {
+            if (isOpen)
+            {
+                return '\\';
+            }
+            else
+            {
+                return '/';
+            }
+        }
+        else
+        {
+            return Moveable[0].Icon();
+        }
+    }
 }
 
