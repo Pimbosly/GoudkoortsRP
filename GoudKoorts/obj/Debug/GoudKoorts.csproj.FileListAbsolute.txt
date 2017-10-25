@@ -6,3 +6,8 @@ C:\Users\Rudolf\Google Drive\School\AVANS 17_18\Mod3\GoudKoorts\GoudkoortsRP\Gou
 C:\Users\Rudolf\Google Drive\School\AVANS 17_18\Mod3\GoudKoorts\GoudkoortsRP\GoudKoorts\bin\Debug\GoudKoorts.pdb
 C:\Users\Rudolf\Google Drive\School\AVANS 17_18\Mod3\GoudKoorts\GoudkoortsRP\GoudKoorts\obj\Debug\GoudKoorts.exe
 C:\Users\Rudolf\Google Drive\School\AVANS 17_18\Mod3\GoudKoorts\GoudkoortsRP\GoudKoorts\obj\Debug\GoudKoorts.pdb
+C:\Users\Pim\Desktop\GoudKoorts\GoudkoortsRP\GoudKoorts\bin\Debug\GoudKoorts.exe
+C:\Users\Pim\Desktop\GoudKoorts\GoudkoortsRP\GoudKoorts\bin\Debug\GoudKoorts.pdb
+C:\Users\Pim\Desktop\GoudKoorts\GoudkoortsRP\GoudKoorts\obj\Debug\GoudKoorts.csprojResolveAssemblyReference.cache
+C:\Users\Pim\Desktop\GoudKoorts\GoudkoortsRP\GoudKoorts\obj\Debug\GoudKoorts.exe
+C:\Users\Pim\Desktop\GoudKoorts\GoudkoortsRP\GoudKoorts\obj\Debug\GoudKoorts.pdb

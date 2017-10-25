@@ -17,5 +17,16 @@ public class RangeArea : Track
 		set;
 	}
 
+    public override char Icon()
+    {
+        if(Moveable.Count() == 0)
+        {
+            return '█';
+        }
+        else
+        {
+            return 'S';
+        }
+    }
 }
 
