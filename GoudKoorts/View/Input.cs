@@ -11,5 +11,16 @@ using System.Text;
 
 public class Input
 {
+    public string askInputString(string question)
+    {
+        Console.WriteLine(question);
+        return Console.ReadLine();
+    }
+
+    public ConsoleKeyInfo askInputKey(string question)
+    {
+        Console.WriteLine(question);
+        return Console.ReadKey();
+    }
 }
 

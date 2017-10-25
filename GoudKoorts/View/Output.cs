@@ -11,5 +11,29 @@ using System.Text;
 
 public class Output
 {
+    public void printMain()
+    {
+        Console.Clear();
+        Console.OutputEncoding = Encoding.GetEncoding(866);
+        Console.WriteLine("┌────────────────────────────────────────────────────┐");
+        Console.WriteLine("| Welkom bij Goudkoorts                              |");
+        Console.WriteLine("| Rudolf Wardanjan  |   Pim Westervoort              |");
+        Console.WriteLine("|                                                    |");
+        Console.WriteLine("└────────────────────────────────────────────────────┘");
+    }
+
+    public void printEnd()
+    {
+        Console.WriteLine("===== CRASHED =====");
+    }
+
+    internal void loadLevel()
+    {
+        Console.Clear();
+        Console.WriteLine("┌────────────┐");
+        Console.WriteLine("| Goudkoorts |");
+        Console.WriteLine("└────────────┘");
+        Console.WriteLine("─────────────────────────────────────────────");
+    }
 }
 
