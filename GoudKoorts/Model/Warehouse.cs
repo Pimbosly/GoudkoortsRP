@@ -15,11 +15,7 @@ public class Warehouse : Track
 
     public Warehouse(char abc)
     {
-        if (abc == 'A' || abc == 'B' || abc == 'C')
-        {
-            ABC = abc;
-        }
-
+        ABC = abc;
     }
     public override char Icon()
     {
