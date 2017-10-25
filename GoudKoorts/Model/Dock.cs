@@ -16,9 +16,16 @@ public class Dock : Track
 		get;
 		set;
 	}
-    public override char Icon()
+    public char Icon()
     {
-        return '█';
+        if (Moveable != null)
+        {
+            return 'D';
+        }
+        else
+        {
+            return Moveable[0].Icon();
+        }
     }
 
 }

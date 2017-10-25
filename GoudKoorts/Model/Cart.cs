@@ -27,7 +27,14 @@ public class Cart : Moveable
 
     public override char Icon()
     {
-        throw new NotImplementedException();
+        if(isFull)
+        {
+            return '€';
+        }
+        else
+        {
+            return 'X';
+        }
     }
 
     public override void Move()
