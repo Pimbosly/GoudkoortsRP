@@ -11,13 +11,16 @@ using System.Text;
 
 public abstract class Moveable
 {
+    public Track Position;
 	public virtual bool isFull
 	{
 		get;
 		set;
 	}
 
-	public virtual void Move()
+    public abstract char Icon();
+
+    public virtual void Move()
 	{
 		throw new System.NotImplementedException();
 	}

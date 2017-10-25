@@ -11,25 +11,30 @@ using System.Text;
 
 public abstract class Track
 {
+    public virtual bool IsTooMuch
+    {
+        get;
+        set;
+    }
 	public virtual Char Icon
 	{
 		get;
 		set;
 	}
 
-	public virtual Moveable Moveable
+	public virtual List<Moveable> Moveable
 	{
 		get;
 		set;
 	}
 
-	public virtual Track nextTrack
+	public virtual Track NextTrack
 	{
 		get;
 		set;
 	}
 
-	public virtual Track previousTrack
+	public virtual Track PreviousTrack
 	{
 		get;
 		set;
@@ -37,12 +42,38 @@ public abstract class Track
 
 	public virtual bool nextIsPrevious(Track track)
 	{
-		throw new System.NotImplementedException();
+		if(track.NextTrack.PreviousTrack == track)
+        {
+            return true;
+        }
+        else
+        {
+            return false;
+        }
 	}
+
+    public virtual void CheckTooMuch()
+    {
+        if(Moveable.Count > 1)
+        {
+            IsTooMuch = true;
+        }
+        else
+        {
+            IsTooMuch = false;
+        }
+    }
 
 	public virtual void TryMove(Moveable moveable)
 	{
-		throw new System.NotImplementedException();
+		if(nextIsPrevious(this))
+        {
+            NextTrack.Moveable.Add(moveable);
+            NextTrack.CheckTooMuch();
+
+            Moveable.Remove(moveable);
+            CheckTooMuch();
+        }
 	}
 
 }

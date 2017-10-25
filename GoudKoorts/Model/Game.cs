@@ -50,5 +50,17 @@ public class Game
 		throw new System.NotImplementedException();
 	}
 
+    public virtual void play()
+    {
+        while(!gameOver)
+        {
+            foreach(Moveable m in Moveable)
+            {
+                m.Move();
+            }
+            System.Threading.Thread.Sleep(1000);
+        }
+    }
+
 }
 

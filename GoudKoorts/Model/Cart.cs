@@ -19,12 +19,20 @@ public class Cart : Moveable
 
 	public override void Empty()
 	{
-		throw new System.NotImplementedException();
+        if (isFull == true)
+        {
+            isFull = false;
+        }
 	}
 
-	public override void Move()
+    public override char Icon()
+    {
+        throw new NotImplementedException();
+    }
+
+    public override void Move()
 	{
-		throw new System.NotImplementedException();
+        Position.TryMove(this);
 	}
 
 }

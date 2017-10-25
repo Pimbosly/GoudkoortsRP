@@ -16,6 +16,10 @@ public class Dock : Track
 		get;
 		set;
 	}
+    public override char Icon()
+    {
+        return '█';
+    }
 
 }
 
