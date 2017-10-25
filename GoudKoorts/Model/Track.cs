@@ -16,13 +16,9 @@ public abstract class Track
         get;
         set;
     }
-	public virtual Char Icon
-	{
-		get;
-		set;
-	}
+    public abstract char Icon();
 
-	public virtual List<Moveable> Moveable
+    public virtual List<Moveable> Moveable
 	{
 		get;
 		set;

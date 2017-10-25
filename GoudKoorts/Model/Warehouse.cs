@@ -11,5 +11,19 @@ using System.Text;
 
 public class Warehouse : Track
 {
+    private char ABC;
+
+    public Warehouse(char abc)
+    {
+        if (abc == 'A' || abc == 'B' || abc == 'C')
+        {
+            ABC = abc;
+        }
+
+    }
+    public override char Icon()
+    {
+        return ABC;
+    }
 }
 

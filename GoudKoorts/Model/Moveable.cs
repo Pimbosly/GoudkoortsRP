@@ -20,15 +20,9 @@ public abstract class Moveable
 
     public abstract char Icon();
 
-    public virtual void Move()
-	{
-		throw new System.NotImplementedException();
-	}
+    public abstract void Move();
 
-	public virtual void Empty()
-	{
-		throw new System.NotImplementedException();
-	}
+    public abstract void Empty();
 
 }
 

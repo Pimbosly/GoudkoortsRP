@@ -11,11 +11,28 @@ using System.Text;
 
 public class Ship : Moveable
 {
-	public virtual int Cargo
+	public int Cargo
 	{
 		get;
 		set;
 	}
+
+    public bool AddCargo()
+    {
+        if(Cargo < 8)
+        {
+            Cargo++;
+            if(Cargo == 8)
+            {
+                isFull = true;
+            }
+            return true;
+        }
+        else
+        {
+            return false;
+        }
+    }
 
 	public override void Empty()
 	{
