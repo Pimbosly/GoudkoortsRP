@@ -43,6 +43,7 @@ public class GameController
 	public virtual void loadMainMenu()
 	{
         Boolean mainMenu = true;
+        g.gameOver = false;
         output.printMain();
         
         while (mainMenu)
@@ -103,7 +104,10 @@ public class GameController
                 }
             }
 
-            output.printEnd();
+        Quit();
+
+            
+            
 
 
     }
@@ -128,6 +132,13 @@ public class GameController
                 case ConsoleKey.NumPad5:
                     Console.WriteLine("5");
                     break;
+                case ConsoleKey.Q:
+                    g.gameOver = true;
+                    Quit();
+                    break;
+                default:
+                    Console.WriteLine("Invalid input");
+                    break;
             }
            //output.loadLevel();
         }
@@ -136,6 +147,17 @@ public class GameController
     public void gameOver()
     {
         output.printEnd();
+
+    }
+    public void Quit()
+    {
+        output.printEnd();
+        Console.WriteLine("Your score is: " + g.Score);
+        Console.WriteLine("");
+        Console.WriteLine("Press any key to continu");
+        ConsoleKeyInfo cki = input.askInputKey();
+        loadMainMenu();
+
 
     }
 
