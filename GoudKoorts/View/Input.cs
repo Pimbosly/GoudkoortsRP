@@ -17,9 +17,8 @@ public class Input
         return Console.ReadLine();
     }
 
-    public ConsoleKeyInfo askInputKey(string question)
+    public ConsoleKeyInfo askInputKey()
     {
-        Console.WriteLine(question);
         return Console.ReadKey();
     }
 }

@@ -25,6 +25,7 @@ public class Output
     public void printEnd()
     {
         Console.WriteLine("===== CRASHED =====");
+
     }
 
     internal void loadLevel()
@@ -34,6 +35,10 @@ public class Output
         Console.WriteLine("| Goudkoorts |");
         Console.WriteLine("└────────────┘");
         Console.WriteLine("─────────────────────────────────────────────");
+        Console.WriteLine("");
+        Console.WriteLine("Use Numpad ( 1 | 2 | 3 | 4 | 5 )");
+
+
     }
 }
 

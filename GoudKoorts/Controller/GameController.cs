@@ -14,11 +14,13 @@ public class GameController
 
     Output output = new Output();
     Input input = new Input();
-    Boolean inGame = false;
+    System.Threading.Thread A;
+
+    Game g = new Game();
 
     public GameController()
     {
-        StartGame();
+        loadMainMenu();
     }
     public virtual Game Game
 	{
@@ -38,51 +40,95 @@ public class GameController
 		set;
 	}
 
-	public virtual void StartGame()
+	public virtual void loadMainMenu()
 	{
         Boolean mainMenu = true;
         output.printMain();
+        
         while (mainMenu)
         {
-            ConsoleKeyInfo cki = input.askInputKey("> Press a key to start the game");
+            Console.WriteLine("Press any key to continue");
+            ConsoleKeyInfo cki = input.askInputKey();
             if (cki.KeyChar == cki.KeyChar)
             {
+                
                 mainMenu = false;
-                generateLevel();
+                StartGame();
+                
+
             }
         }
 
     }
+    public virtual void StartGame()
+    {
 
-	public virtual void generateLevel()
-	{
-        output.loadLevel();
-        inGame = true;
-           
+        A = new System.Threading.Thread(new
+        System.Threading.ThreadStart(Play));
+
+        A.Start();
+
+        while (!g.gameOver)
+        {
+            handleInput(input.askInputKey().Key);
+        }
+
+        if (A.IsAlive)
+        {
+            A.Abort();
+        }
+
+
+    }
+
+    public void Play()
+    {
+        
+            while (!g.gameOver)
+            {
+                output.loadLevel();
+                A.Join(g.Speed());
+                
+                if (g.Moveable != null)
+                {
+                    if (g.Moveable.Count() != 0)
+                    {
+                        
+                        foreach (Moveable m in g.Moveable)
+                        {
+                            m.Move();
+                        }
+                    }
+                }
+            }
+
+
     }
     public void handleInput(ConsoleKey input)
     {
-        if (inGame)
+        if (!g.gameOver)
         {
             switch (input)
             {
                 case ConsoleKey.NumPad1:
-                    Console.WriteLine('1');
                     break;
                 case ConsoleKey.NumPad2:
-                    Console.WriteLine('2');
                     break;
                 case ConsoleKey.NumPad3:
-                    Console.WriteLine('3');
                     break;
                 case ConsoleKey.NumPad4:
-                    Console.WriteLine('4');
                     break;
                 case ConsoleKey.NumPad5:
-                    Console.WriteLine('5');
                     break;
             }
+           output.loadLevel();
         }
+    }
+
+    public void gameOver()
+    {
+        output.printEnd();
+
     }
 
 }

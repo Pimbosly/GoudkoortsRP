@@ -29,11 +29,6 @@ public class GameController
 		set;
 	}
 
-	public virtual Parser Parser
-	{
-		get;
-		set;
-	}
 
 	public virtual void StartGame()
 	{

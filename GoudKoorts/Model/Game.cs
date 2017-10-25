@@ -15,7 +15,9 @@ public class Game
     Input input = new Input();
 
     public Boolean gameOver = false;
-    public int Score = 0;
+    public int Score = 20;
+
+   // public int Speed = 5000;
 
 	public virtual IEnumerable<Warehouse> Warehouse
 	{
@@ -44,16 +46,18 @@ public class Game
 		throw new System.NotImplementedException();
 	}
 
-    public virtual void play()
+    public int Speed()
     {
-        while(!gameOver)
+
+        if (Score == 0)
         {
-            foreach(Moveable m in Moveable)
-            {
-                m.Move();
-            }
-            System.Threading.Thread.Sleep(1000);
+            return 5000;
         }
+        else
+        {
+            return 5000 / Score * 9;
+        }
+        
     }
 
 }
