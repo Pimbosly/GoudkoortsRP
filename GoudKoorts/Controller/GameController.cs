@@ -79,6 +79,7 @@ public class GameController
         }
 
 
+
     }
 
     public void Play()
@@ -102,6 +103,8 @@ public class GameController
                 }
             }
 
+            output.printEnd();
+
 
     }
     public void handleInput(ConsoleKey input)
@@ -111,17 +114,22 @@ public class GameController
             switch (input)
             {
                 case ConsoleKey.NumPad1:
+                    Console.WriteLine("1");
                     break;
                 case ConsoleKey.NumPad2:
+                    Console.WriteLine("2");
                     break;
                 case ConsoleKey.NumPad3:
+                    Console.WriteLine("3");
                     break;
                 case ConsoleKey.NumPad4:
+                    Console.WriteLine("4");
                     break;
                 case ConsoleKey.NumPad5:
+                    Console.WriteLine("5");
                     break;
             }
-           output.loadLevel();
+           //output.loadLevel();
         }
     }
 
