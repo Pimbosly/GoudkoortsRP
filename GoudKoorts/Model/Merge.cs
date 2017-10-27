@@ -17,6 +17,11 @@ public class Merge : Switch
 		set;
 	}
 
+    public override int CollectPoints()
+    {
+        throw new NotImplementedException();
+    }
+
     public override char Icon()
     {
         if (Moveable.Count == 0)

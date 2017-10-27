@@ -11,11 +11,10 @@ using System.Text;
 
 public class Dock : Track
 {
-	public virtual object Symbol
+    public override int CollectPoints()
     {
-		get;
-		set;
-	}
+        throw new NotImplementedException();
+    }
 
     public override char Icon()
     {

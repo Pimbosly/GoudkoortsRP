@@ -39,5 +39,10 @@ public class Split : Switch
         NextTrack = tempNext;
         tempNext = tempNext2;
     }
+
+    public override int CollectPoints()
+    {
+        throw new NotImplementedException();
+    }
 }
 
