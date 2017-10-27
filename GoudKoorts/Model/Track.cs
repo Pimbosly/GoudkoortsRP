@@ -11,6 +11,7 @@ using System.Text;
 
 public abstract class Track
 {
+
     public virtual int x
     {
         get;

@@ -15,21 +15,19 @@ namespace GoudKoorts.Controller
 
         public Parser()
         {
-            path = String.Concat("..\\..\\Level\\lvl", ".txt");
 
         }
 
-        public void LoadLevel()
+        public void LoadLevel(Game game)
         {
             string line;
-
-            _inputStream = new FileStream(path, FileMode.Open, FileAccess.Read);
-            _streamReader = new StreamReader(_inputStream);
+            _streamReader = new StreamReader("\\Level\\lvl.txt");
             string lineString = _streamReader.ReadLine();
 
             List<Track> prevLine = null;
             while ((line = _streamReader.ReadLine()) != null)
             {
+                Track current = null;
                 List<Track> currentLine = new List<Track>();
                 for (int i = 0; i < line.Length; i++)
                 {
@@ -43,7 +41,10 @@ namespace GoudKoorts.Controller
                             Console.WriteLine(" ");
                             break;
                         case '8':
+                            game.ship = new Ship();
                             newObject = new NormalTrack();
+                            game.ship.Position = (Track)newObject;
+                            newObject.Moveable.Add(game.ship);
                             break;
                         case 'W':
                             newObject = new Warehouse();
@@ -54,6 +55,15 @@ namespace GoudKoorts.Controller
                         case 'M':
                             newObject = new Merge();
                             break;
+                    }
+                    if (current != null && newObject != null)
+                    {
+                    }
+                    if (newObject != null)
+                    {
+                        if (prevLine != null && prevLine[i] != null)
+                        {
+                        }
                     }
                 }
             }
