@@ -35,5 +35,12 @@ public class Merge : Switch
             return Moveable[0].Icon();
         }
     }
+
+    public override void swapNext()
+    {
+        Track tempPrevious2 = NextTrack;
+        PreviousTrack = tempPrevious;
+        tempPrevious = tempPrevious2;
+    }
 }
 

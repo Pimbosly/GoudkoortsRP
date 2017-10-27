@@ -32,7 +32,10 @@ public abstract class Switch : Track
         {
             isOpen = true;
         }
+        swapNext();
     }
+
+    public abstract void swapNext();
 
 }
 
