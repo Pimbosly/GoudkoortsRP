@@ -21,7 +21,7 @@ namespace GoudKoorts.Controller
 
         public void LoadLevel()
         {
-            string line
+            string line;
 
             _inputStream = new FileStream(path, FileMode.Open, FileAccess.Read);
             _streamReader = new StreamReader(_inputStream);
@@ -30,13 +30,28 @@ namespace GoudKoorts.Controller
             List<Track> prevLine = null;
             while ((line = _streamReader.ReadLine()) != null)
             {
-                Track current = null;
                 List<Track> currentLine = new List<Track>();
                 for (int i = 0; i < line.Length; i++)
                 {
                     Track newObject = null;
                     switch (line[i])
                     {
+                        case '.':
+                            newObject = new NormalTrack();
+                            break;
+                        case '-':
+                            Console.WriteLine(" ");
+                            break;
+                        case '8':
+                            newObject = new Ship();
+                            break;
+                        case 'W':
+                            newObject = new Warehouse();
+                            break;
+                        case 'S':
+                            newObject = new Split();
+                        case 'M':
+                            newObject = new Merge():
                     }
                 }
             }
