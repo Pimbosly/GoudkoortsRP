@@ -62,5 +62,20 @@ public class Game
         
     }
 
+    public bool CollisionCheck()
+    {
+        foreach(Moveable m in Moveable)
+        {
+            if(m.Position.IsTooMuch)
+            {
+                //collision
+                gameOver = true;
+                return true;
+            }
+        }
+        //no collision
+        return false;
+    }
+
 }
 
