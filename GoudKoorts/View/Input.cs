@@ -13,7 +13,6 @@ public class Input
 {
     public string askInputString(string question)
     {
-        Console.WriteLine(question);
         return Console.ReadLine();
     }
 

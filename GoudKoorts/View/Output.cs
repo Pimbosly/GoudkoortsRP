@@ -24,7 +24,8 @@ public class Output
 
     public void printEnd()
     {
-        Console.WriteLine("===== CRASHED =====");
+        Console.Clear();
+        Console.WriteLine("===== GAME OVER =====");
 
     }
 
@@ -36,7 +37,7 @@ public class Output
         Console.WriteLine("└────────────┘");
         Console.WriteLine("─────────────────────────────────────────────");
         Console.WriteLine("");
-        Console.WriteLine("Use Numpad ( 1 | 2 | 3 | 4 | 5 )");
+        //Console.WriteLine("Use Numpad ( 1 | 2 | 3 | 4 | 5 )");
 
 
     }
