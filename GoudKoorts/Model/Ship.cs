@@ -17,6 +17,18 @@ public class Ship : Moveable
 		set;
 	}
 
+    public bool isDocked
+    {
+        get;
+        set;
+    }
+
+    public Ship()
+    {
+        Cargo = 0;
+        isDocked = true;
+        isFull = false;
+    }
     public bool AddCargo()
     {
         if(Cargo < 8)
@@ -73,6 +85,7 @@ public class Ship : Moveable
 
     public override void Move()
 	{
+        if
         Position.TryMove(this);
 	}
 
