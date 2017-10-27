@@ -17,6 +17,12 @@ public class Cart : Moveable
 		set;
 	}
 
+    public Cart()
+    {
+        this.canMove = true;
+        this.isFull = true;
+    }
+
 	public override void Empty()
 	{
         if (isFull == true)

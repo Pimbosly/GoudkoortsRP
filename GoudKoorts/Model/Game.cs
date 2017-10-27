@@ -18,8 +18,12 @@ public class Game
     public int Score = 20;
 
    // public int Speed = 5000;
-
-	public virtual IEnumerable<Warehouse> Warehouse
+   public virtual Dock Sea
+    {
+        get;
+        set;
+    }
+	public virtual List<Warehouse> Warehouse
 	{
 		get;
 		set;
@@ -33,17 +37,15 @@ public class Game
 
 	public virtual void addCart(Warehouse warehouse)
 	{
-		throw new System.NotImplementedException();
-	}
-
-	public virtual void delCart(Cart cart)
-	{
-		throw new System.NotImplementedException();
+        Cart k = new Cart();
+        warehouse.Moveable.Add(k);
 	}
 
 	public virtual Warehouse randomWarehouse()
 	{
-		throw new System.NotImplementedException();
+        Random rnd = new Random();
+        int nr = rnd.Next(0, 3);
+        return Warehouse[nr];
 	}
 
     public int Speed()

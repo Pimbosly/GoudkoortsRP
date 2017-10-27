@@ -28,5 +28,20 @@ public class RangeArea : Track
             return 'S';
         }
     }
+
+    public override bool TryMove(Moveable moveable)
+    {
+        if (NextTrack != null)
+        {
+            if (NextTrack.Moveable.Count() == 0)
+            {
+                NextTrack.Moveable.Add(moveable);
+                Moveable.Remove(moveable);
+                CheckTooMuch();
+                return true;
+            }
+        }
+        return false; 
+    }
 }
 

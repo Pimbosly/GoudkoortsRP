@@ -17,6 +17,10 @@ public class Split : Switch
 		set;
 	}
 
+    public Split()
+    {
+        isOpen = true;
+    }
     public override char Icon()
     {
         if(isOpen)
@@ -29,5 +33,11 @@ public class Split : Switch
         }
     }
 
+    public override void swapNext()
+    {
+        Track tempNext2 = NextTrack;
+        NextTrack = tempNext;
+        tempNext = tempNext2;
+    }
 }
 
