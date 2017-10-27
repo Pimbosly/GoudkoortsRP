@@ -1,1 +1,5 @@
 C:\Users\Rudolf\Google Drive\School\AVANS 17_18\Mod3\GoudKoorts\GoudkoortsRP\GoudKoortsUMLLib\obj\Debug\GoudKoortsUMLLib.csprojResolveAssemblyReference.cache
+C:\Users\Rudolf\Google Drive\School\AVANS 17_18\Mod3\GoudKoorts\GoudkoortsRP\GoudKoortsUMLLib\bin\Debug\GoudKoortsUMLLib.dll
+C:\Users\Rudolf\Google Drive\School\AVANS 17_18\Mod3\GoudKoorts\GoudkoortsRP\GoudKoortsUMLLib\bin\Debug\GoudKoortsUMLLib.pdb
+C:\Users\Rudolf\Google Drive\School\AVANS 17_18\Mod3\GoudKoorts\GoudkoortsRP\GoudKoortsUMLLib\obj\Debug\GoudKoortsUMLLib.dll
+C:\Users\Rudolf\Google Drive\School\AVANS 17_18\Mod3\GoudKoorts\GoudkoortsRP\GoudKoortsUMLLib\obj\Debug\GoudKoortsUMLLib.pdb

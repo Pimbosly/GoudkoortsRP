@@ -29,7 +29,7 @@ public class Output
 
     }
 
-    internal void loadLevel()
+    internal void printLevel()
     {
         Console.Clear();
         Console.WriteLine("┌────────────┐");

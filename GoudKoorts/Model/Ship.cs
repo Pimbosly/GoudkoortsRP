@@ -85,7 +85,7 @@ public class Ship : Moveable
 
     public override void Move()
 	{
-        if
+
         Position.TryMove(this);
 	}
 

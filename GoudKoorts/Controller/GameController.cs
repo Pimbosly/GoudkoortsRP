@@ -4,6 +4,7 @@
 //     Changes to this file will be lost if the code is regenerated.
 // </auto-generated>
 //------------------------------------------------------------------------------
+using GoudKoorts.Controller;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -12,6 +13,7 @@ using System.Text;
 public class GameController
 {
 
+    Parser parser;
     Output output = new Output();
     Input input = new Input();
     System.Threading.Thread A;
@@ -52,11 +54,8 @@ public class GameController
             ConsoleKeyInfo cki = input.askInputKey();
             if (cki.KeyChar == cki.KeyChar)
             {
-                
-                mainMenu = false;
-                StartGame();
-                
-
+                    mainMenu = false;
+                    StartGame();
             }
         }
 
@@ -88,7 +87,7 @@ public class GameController
         
             while (!g.gameOver)
             {
-                output.loadLevel();
+                output.printLevel();
                 A.Join(g.Speed());
                 
                 if (g.Moveable != null)
