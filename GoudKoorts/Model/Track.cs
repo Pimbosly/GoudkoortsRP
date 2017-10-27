@@ -11,6 +11,16 @@ using System.Text;
 
 public abstract class Track
 {
+    public virtual int x
+    {
+        get;
+        set;
+    }
+    public virtual int y
+    {
+        get;
+        set;
+    }
     public virtual bool IsTooMuch
     {
         get;
@@ -60,7 +70,7 @@ public abstract class Track
         }
     }
 
-	public virtual void TryMove(Moveable moveable)
+	public virtual bool TryMove(Moveable moveable)
 	{
 		if(nextIsPrevious(this))
         {
@@ -69,6 +79,12 @@ public abstract class Track
 
             Moveable.Remove(moveable);
             CheckTooMuch();
+
+            return true;
+        }
+        else
+        {
+            return false;
         }
 	}
 
