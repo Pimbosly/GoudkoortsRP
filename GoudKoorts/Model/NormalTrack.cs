@@ -11,6 +11,10 @@ using System.Text;
 
 public class NormalTrack : Track
 {
+    public override int CollectPoints()
+    {
+        throw new NotImplementedException();
+    }
 
     public override char Icon()
     {

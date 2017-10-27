@@ -15,7 +15,7 @@ public class Game
     Input input = new Input();
 
     public Boolean gameOver = false;
-    public int Score = 20;
+    public int Score = 0;
 
    // public int Speed = 5000;
    public virtual Dock Sea
@@ -66,6 +66,7 @@ public class Game
     {
         foreach(Moveable m in Moveable)
         {
+            Score = Score + m.Position.CollectPoints();
             if(m.Position.IsTooMuch)
             {
                 //collision

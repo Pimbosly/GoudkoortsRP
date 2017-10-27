@@ -11,15 +11,14 @@ using System.Text;
 
 public class Warehouse : Track
 {
-    private char ABC;
-
-    public Warehouse(char abc)
+    public override int CollectPoints()
     {
-        ABC = abc;
+        return 0;
     }
+
     public override char Icon()
     {
-        return ABC;
+        return 'W';
     }
 }
 
