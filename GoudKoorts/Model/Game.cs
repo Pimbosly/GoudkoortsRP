@@ -13,6 +13,7 @@ public class Game
 {
     Output output = new Output();
     Input input = new Input();
+    public Ship ship;
 
     public Boolean gameOver;
     public int Score;

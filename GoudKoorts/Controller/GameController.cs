@@ -54,6 +54,7 @@ public class GameController
             ConsoleKeyInfo cki = input.askInputKey();
             if (cki.KeyChar == cki.KeyChar)
             {
+                    parser = new Parser();
                     mainMenu = false;
                     StartGame();
             }
