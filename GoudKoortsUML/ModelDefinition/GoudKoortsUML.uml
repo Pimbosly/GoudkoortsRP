@@ -368,6 +368,30 @@
               </stereotypeInstance>
             </appliedStereotypesInternal>
           </operation>
+          <operation
+            Id="852a9ff0-c48d-4f0a-9943-5c88c269ed37"
+            name="Icon"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="bfca295e-ae4c-4f61-9f22-39ebf6f37710"
+                  direction="Return"
+                  isUnique="false">
+                  <type_NamedElement>
+                    <undefinedTypeMoniker
+                      Id="d0770144-ba65-45c2-8856-88acae74c1f6"
+                      LastKnownName="char"
+                      LastKnownLocation="GoudKoortsUML.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
         </ownedOperationsInternal>
       </class>
     </packageHasNamedElement>
@@ -501,9 +525,27 @@
               </stereotypeInstance>
             </appliedStereotypesInternal>
             <type_NamedElement>
-              <primitiveTypeMoniker
-                Id="220a3521-e091-4221-bae9-3ef9018e845c"
-                LastKnownName="Integer"
+              <undefinedTypeMoniker
+                Id="cd2554a0-a373-470e-9a90-051d2eaa060b"
+                LastKnownName="int"
+                LastKnownLocation="GoudKoortsUML.uml" />
+            </type_NamedElement>
+          </property>
+          <property
+            Id="d1609c4b-ae7a-4746-8ea5-fe7175a0335b"
+            name="isDocked"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <type_NamedElement>
+              <undefinedTypeMoniker
+                Id="6c7ffd29-4ef1-4dfb-aec6-5b33d54f8c46"
+                LastKnownName="bool"
                 LastKnownLocation="GoudKoortsUML.uml" />
             </type_NamedElement>
           </property>
@@ -626,6 +668,30 @@
                 </propertyInstances>
               </stereotypeInstance>
             </appliedStereotypesInternal>
+          </operation>
+          <operation
+            Id="ba44fd55-6115-4cb2-91c3-3c65d4c25f38"
+            name="Icon"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="7ea6ddcc-98b4-42c6-9edf-cf78423fc422"
+                  direction="Return"
+                  isUnique="false">
+                  <type_NamedElement>
+                    <undefinedTypeMoniker
+                      Id="d0770144-ba65-45c2-8856-88acae74c1f6"
+                      LastKnownName="char"
+                      LastKnownLocation="GoudKoortsUML.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
           </operation>
         </ownedOperationsInternal>
       </class>
@@ -840,8 +906,8 @@
         </targetEnds>
         <ownedAttributesInternal>
           <property
-            Id="1d3d60c9-318c-41ef-8980-17607b40d6bb"
-            name="Icon"
+            Id="ee1d4c0e-240a-4bba-8fb1-02cc37e17b63"
+            name="x"
             isLeaf="false"
             isStatic="false"
             isReadOnly="false"
@@ -850,67 +916,46 @@
             isDerivedUnion="false"
             aggregation="None"
             isComposite="false">
-            <appliedStereotypesInternal>
-              <stereotypeInstance
-                Id="b5f3d96d-5716-4cd9-88ed-e1bba4bb4f95"
-                name="property"
-                profile="CSharpProfile">
-                <propertyInstances>
-                  <stereotypeInstanceHasPropertyInstances
-                    Id="ae7d4720-bced-4f7e-94f8-48189470698c">
-                    <propertyInstance
-                      Id="5c52abaf-eecd-41a2-b3ab-24575b80c24b"
-                      name="ClrAttributes" />
-                  </stereotypeInstanceHasPropertyInstances>
-                  <stereotypeInstanceHasPropertyInstances
-                    Id="d861203b-d920-4bfb-bff5-b4c02e841707">
-                    <propertyInstance
-                      Id="1fcf0b02-6e0e-4ea4-be63-6d0c5b759593"
-                      name="Get"
-                      value="none" />
-                  </stereotypeInstanceHasPropertyInstances>
-                  <stereotypeInstanceHasPropertyInstances
-                    Id="9f2f5361-b1ea-4ffb-8d6f-36bee7e090aa">
-                    <propertyInstance
-                      Id="6560dc7c-c4c4-45f9-a0ac-492b241caae5"
-                      name="HasBody"
-                      value="false" />
-                  </stereotypeInstanceHasPropertyInstances>
-                  <stereotypeInstanceHasPropertyInstances
-                    Id="b96368e3-cb12-409b-b989-d8df889ce2c2">
-                    <propertyInstance
-                      Id="383670c1-c3ed-4277-9f19-f576bf639729"
-                      name="IsUnsafe"
-                      value="false" />
-                  </stereotypeInstanceHasPropertyInstances>
-                  <stereotypeInstanceHasPropertyInstances
-                    Id="47c5a696-0f1f-42e8-a837-0803c7f3435a">
-                    <propertyInstance
-                      Id="63d0b1bf-2b0e-4a48-ab1c-bff009c0d04e"
-                      name="Inheritance"
-                      value="none" />
-                  </stereotypeInstanceHasPropertyInstances>
-                  <stereotypeInstanceHasPropertyInstances
-                    Id="f59fc3e1-2773-4298-9769-030cafe36ab3">
-                    <propertyInstance
-                      Id="7e6f4bb8-56e3-4eb4-b588-1bb6e8fe3a4f"
-                      name="PackageVisibility"
-                      value="internal" />
-                  </stereotypeInstanceHasPropertyInstances>
-                  <stereotypeInstanceHasPropertyInstances
-                    Id="cce02874-02ca-4c34-9ac4-243342f3b82a">
-                    <propertyInstance
-                      Id="d42483b7-c878-45e2-9c0b-c720ce444085"
-                      name="Set"
-                      value="none" />
-                  </stereotypeInstanceHasPropertyInstances>
-                </propertyInstances>
-              </stereotypeInstance>
-            </appliedStereotypesInternal>
             <type_NamedElement>
               <undefinedTypeMoniker
-                Id="06dd0054-0a30-40cc-b449-94d9d8d73a95"
-                LastKnownName="Char"
+                Id="cd2554a0-a373-470e-9a90-051d2eaa060b"
+                LastKnownName="int"
+                LastKnownLocation="GoudKoortsUML.uml" />
+            </type_NamedElement>
+          </property>
+          <property
+            Id="7d34b723-cc78-4912-bde5-5455e2fec125"
+            name="y"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <type_NamedElement>
+              <undefinedTypeMoniker
+                Id="cd2554a0-a373-470e-9a90-051d2eaa060b"
+                LastKnownName="int"
+                LastKnownLocation="GoudKoortsUML.uml" />
+            </type_NamedElement>
+          </property>
+          <property
+            Id="09f59b10-cb4c-4c57-99bb-52b0cbee176a"
+            name="IsTooMuch"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <type_NamedElement>
+              <undefinedTypeMoniker
+                Id="6c7ffd29-4ef1-4dfb-aec6-5b33d54f8c46"
+                LastKnownName="bool"
                 LastKnownLocation="GoudKoortsUML.uml" />
             </type_NamedElement>
           </property>
@@ -977,7 +1022,20 @@
             <ownedParameters>
               <operationHasOwnedParameters>
                 <parameter
-                  Id="eb72d311-8be2-4c8e-be02-900298224bd4"
+                  Id="6818d655-41b7-482a-83f1-f1efcaab287f"
+                  direction="Return"
+                  isUnique="false">
+                  <type_NamedElement>
+                    <undefinedTypeMoniker
+                      Id="6c7ffd29-4ef1-4dfb-aec6-5b33d54f8c46"
+                      LastKnownName="bool"
+                      LastKnownLocation="GoudKoortsUML.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="65f1d744-82db-40f2-a2bb-b0156892bf87"
                   name="track"
                   direction="In"
                   isUnique="false">
@@ -989,82 +1047,20 @@
                   </type_NamedElement>
                 </parameter>
               </operationHasOwnedParameters>
-              <operationHasOwnedParameters>
-                <parameter
-                  Id="6818d655-41b7-482a-83f1-f1efcaab287f"
-                  direction="Return">
-                  <type_NamedElement>
-                    <primitiveTypeMoniker
-                      Id="8943dc84-709e-4f62-b15a-a3273aa6f165"
-                      LastKnownName="Boolean"
-                      LastKnownLocation="GoudKoortsUML.uml" />
-                  </type_NamedElement>
-                </parameter>
-              </operationHasOwnedParameters>
             </ownedParameters>
           </operation>
           <operation
-            Id="1074e297-9236-462b-b890-f8647ef83f0c"
+            Id="4f3d4d9f-cfbc-4128-af07-5182c1eb200c"
             name="TryMove"
             isLeaf="false"
             isStatic="false"
             isAbstract="false"
             concurrency="Sequential"
             isQuery="false">
-            <appliedStereotypesInternal>
-              <stereotypeInstance
-                Id="76442e3f-14c0-4b4b-830c-384318960536"
-                name="method"
-                profile="CSharpProfile">
-                <propertyInstances>
-                  <stereotypeInstanceHasPropertyInstances
-                    Id="27a3c40c-a52d-4ed4-b78a-8ee7238fae59">
-                    <propertyInstance
-                      Id="9b0a0567-6015-41f7-ac6b-3d2b408643f0"
-                      name="ClrAttributes" />
-                  </stereotypeInstanceHasPropertyInstances>
-                  <stereotypeInstanceHasPropertyInstances
-                    Id="53797af1-daf3-4382-9917-69ef0f940e37">
-                    <propertyInstance
-                      Id="7d2ae04b-a60b-4253-95ae-34a6c5978f49"
-                      name="IsPartial"
-                      value="false" />
-                  </stereotypeInstanceHasPropertyInstances>
-                  <stereotypeInstanceHasPropertyInstances
-                    Id="74d06231-85f4-4249-86b3-5cc115b4002a">
-                    <propertyInstance
-                      Id="062f7661-3591-4c7b-bf46-efe50716e926"
-                      name="IsUnsafe"
-                      value="false" />
-                  </stereotypeInstanceHasPropertyInstances>
-                  <stereotypeInstanceHasPropertyInstances
-                    Id="fc3d11ee-6736-4543-9b6d-98add0fe1197">
-                    <propertyInstance
-                      Id="136b22aa-4d4a-4143-9b5d-1dd8acfc75c3"
-                      name="Inheritance"
-                      value="none" />
-                  </stereotypeInstanceHasPropertyInstances>
-                  <stereotypeInstanceHasPropertyInstances
-                    Id="3cbeec57-943b-4480-927f-5e9d5a150e18">
-                    <propertyInstance
-                      Id="b26320a9-ce44-437c-85b8-97f1a069ce97"
-                      name="PackageVisibility"
-                      value="internal" />
-                  </stereotypeInstanceHasPropertyInstances>
-                  <stereotypeInstanceHasPropertyInstances
-                    Id="b5a2d5d9-e6db-4a7e-ab89-10aa48d66a9c">
-                    <propertyInstance
-                      Id="a0b1a9f4-954e-446e-95d8-86c015cdaefb"
-                      name="params"
-                      value="false" />
-                  </stereotypeInstanceHasPropertyInstances>
-                </propertyInstances>
-              </stereotypeInstance>
-            </appliedStereotypesInternal>
             <ownedParameters>
               <operationHasOwnedParameters>
                 <parameter
-                  Id="b712aab1-fcd8-449c-90f4-550a37972641"
+                  Id="2880a852-8e7a-4226-bea5-8b15ee2d348c"
                   name="moveable"
                   direction="In"
                   isUnique="false">
@@ -1072,6 +1068,67 @@
                     <classMoniker
                       Id="fc0a2dce-fb71-422e-91f7-7b95fefe05ce"
                       LastKnownName="Moveable"
+                      LastKnownLocation="GoudKoortsUML.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="dab7d59f-ffb5-4822-ab15-c9ac5b27dae0"
+                  direction="Return"
+                  isUnique="false">
+                  <type_NamedElement>
+                    <undefinedTypeMoniker
+                      Id="6c7ffd29-4ef1-4dfb-aec6-5b33d54f8c46"
+                      LastKnownName="bool"
+                      LastKnownLocation="GoudKoortsUML.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation
+            Id="095ea5d0-c475-44a3-9465-0b9d65515401"
+            name="CollectPoints"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="6e6e33bd-53d2-4549-92c1-8a326343cc22"
+                  direction="Return"
+                  isUnique="false">
+                  <type_NamedElement>
+                    <undefinedTypeMoniker
+                      Id="cd2554a0-a373-470e-9a90-051d2eaa060b"
+                      LastKnownName="int"
+                      LastKnownLocation="GoudKoortsUML.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation
+            Id="3c70f4c1-3420-4252-afa3-f41837c19b7e"
+            name="Icon"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="a9d5806d-68bc-473b-9c61-5907c6b58f6e"
+                  direction="Return"
+                  isUnique="false">
+                  <type_NamedElement>
+                    <undefinedTypeMoniker
+                      Id="d0770144-ba65-45c2-8856-88acae74c1f6"
+                      LastKnownName="char"
                       LastKnownLocation="GoudKoortsUML.uml" />
                   </type_NamedElement>
                 </parameter>
@@ -1185,7 +1242,7 @@
         <ownedOperationsInternal>
           <operation
             Id="59423e0d-a391-4375-9b12-51f3b54a33b3"
-            name="Swap"
+            name="SwapNext"
             isLeaf="false"
             isStatic="false"
             isAbstract="false"
@@ -1241,6 +1298,54 @@
                 </propertyInstances>
               </stereotypeInstance>
             </appliedStereotypesInternal>
+          </operation>
+          <operation
+            Id="caaa3e48-dbe9-48b9-960b-c91ad73f8047"
+            name="ColectPoints"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="1c2fb323-856f-4972-8197-69a496d75355"
+                  direction="Return"
+                  isUnique="false">
+                  <type_NamedElement>
+                    <undefinedTypeMoniker
+                      Id="cd2554a0-a373-470e-9a90-051d2eaa060b"
+                      LastKnownName="int"
+                      LastKnownLocation="GoudKoortsUML.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation
+            Id="43e39d6d-2dbf-4297-ada2-5142ddade93f"
+            name="Icon"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="9ea488ee-dac0-4127-b010-fc5487101314"
+                  direction="Return"
+                  isUnique="false">
+                  <type_NamedElement>
+                    <undefinedTypeMoniker
+                      Id="d0770144-ba65-45c2-8856-88acae74c1f6"
+                      LastKnownName="char"
+                      LastKnownLocation="GoudKoortsUML.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
           </operation>
         </ownedOperationsInternal>
       </class>
@@ -1305,77 +1410,122 @@
               LastKnownLocation="GoudKoortsUML.uml" />
           </generalization>
         </generalsInternal>
-        <ownedAttributesInternal>
-          <property
-            Id="fcafa27c-228d-469e-ad85-81f681574941"
+        <targetEnds>
+          <association
+            Id="f15d65a5-ed5b-498e-ba1a-6b400f3aeddf"
+            isDerived="false"
+            sourceEndRoleName="Dock"
+            targetEndRoleName="Ship"
+            isLeaf="false"
+            isAbstract="false">
+            <classMoniker
+              Id="d640f140-9b24-47e9-9887-87907b9f598d"
+              LastKnownName="Ship"
+              LastKnownLocation="GoudKoortsUML.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="777f1f55-9587-4431-acde-8865e6a50ab8"
+                  name="Dock"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="6e23a69c-9d12-48e3-92fb-889757a5dc6e"
+                  name="Ship"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+        </targetEnds>
+        <ownedOperationsInternal>
+          <operation
+            Id="4e6b5b7d-d29c-4ba5-9853-602a68029ce9"
+            name="ColectPoints"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="b1472253-e682-4d89-bdf4-26cfeda39fa4"
+                  direction="Return"
+                  isUnique="false">
+                  <type_NamedElement>
+                    <undefinedTypeMoniker
+                      Id="cd2554a0-a373-470e-9a90-051d2eaa060b"
+                      LastKnownName="int"
+                      LastKnownLocation="GoudKoortsUML.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation
+            Id="8aca75e5-9300-4fce-b9fd-aa2218aed1a9"
             name="Icon"
             isLeaf="false"
             isStatic="false"
-            isReadOnly="false"
-            isUnique="false"
-            isDerived="false"
-            isDerivedUnion="false"
-            aggregation="None"
-            isComposite="false">
-            <appliedStereotypesInternal>
-              <stereotypeInstance
-                Id="6bf2b0aa-512d-4b8c-b140-24bc9779303a"
-                name="property"
-                profile="CSharpProfile">
-                <propertyInstances>
-                  <stereotypeInstanceHasPropertyInstances
-                    Id="7d1be85d-4039-42e8-a95f-cbcc800a1604">
-                    <propertyInstance
-                      Id="1033ec25-96fb-4fef-9c7f-d455c7a678c7"
-                      name="ClrAttributes" />
-                  </stereotypeInstanceHasPropertyInstances>
-                  <stereotypeInstanceHasPropertyInstances
-                    Id="5c337644-6751-4a26-b8be-f76ed8ec1add">
-                    <propertyInstance
-                      Id="6959d461-30f9-484d-be3c-9baefdb73427"
-                      name="Get"
-                      value="none" />
-                  </stereotypeInstanceHasPropertyInstances>
-                  <stereotypeInstanceHasPropertyInstances
-                    Id="2b1d7703-09eb-422e-9d26-650bd5fc4a81">
-                    <propertyInstance
-                      Id="9a521850-9934-4e03-9907-61456cba7486"
-                      name="HasBody"
-                      value="false" />
-                  </stereotypeInstanceHasPropertyInstances>
-                  <stereotypeInstanceHasPropertyInstances
-                    Id="e9d2105f-8473-49ea-b7cd-8a5c66eae772">
-                    <propertyInstance
-                      Id="e11a95f8-4ef1-43bf-9a35-d2e68c8c7aa4"
-                      name="IsUnsafe"
-                      value="false" />
-                  </stereotypeInstanceHasPropertyInstances>
-                  <stereotypeInstanceHasPropertyInstances
-                    Id="5aae87ac-a49f-40c3-9721-322799ac6fe0">
-                    <propertyInstance
-                      Id="e1ba1449-cdfb-4c11-8019-e298c08db9d0"
-                      name="Inheritance"
-                      value="none" />
-                  </stereotypeInstanceHasPropertyInstances>
-                  <stereotypeInstanceHasPropertyInstances
-                    Id="7d33c27d-626e-429b-aa2e-3316c1d7f2df">
-                    <propertyInstance
-                      Id="e1464376-1dd2-4205-92db-ef697612a349"
-                      name="PackageVisibility"
-                      value="internal" />
-                  </stereotypeInstanceHasPropertyInstances>
-                  <stereotypeInstanceHasPropertyInstances
-                    Id="8cc4798e-2b0e-4d8a-a5fe-9223fdca9f7f">
-                    <propertyInstance
-                      Id="eaba24ce-aae0-47a5-a8f6-27378fd5b3f3"
-                      name="Set"
-                      value="none" />
-                  </stereotypeInstanceHasPropertyInstances>
-                </propertyInstances>
-              </stereotypeInstance>
-            </appliedStereotypesInternal>
-          </property>
-        </ownedAttributesInternal>
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="8b456398-2eec-4401-8c0e-78333fd31164"
+                  direction="Return"
+                  isUnique="false">
+                  <type_NamedElement>
+                    <undefinedTypeMoniker
+                      Id="d0770144-ba65-45c2-8856-88acae74c1f6"
+                      LastKnownName="char"
+                      LastKnownLocation="GoudKoortsUML.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation
+            Id="4da98de3-bc62-4e45-8be1-e2c9d3cab09a"
+            name="EmptyCart"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="9ce4391c-9ce2-42a9-80d6-6b7babb2049a"
+                  name="c"
+                  direction="In"
+                  isUnique="false">
+                  <type_NamedElement>
+                    <classMoniker
+                      Id="9780a3d2-f599-449e-b2c5-934e6c75f01e"
+                      LastKnownName="Cart"
+                      LastKnownLocation="GoudKoortsUML.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+        </ownedOperationsInternal>
       </class>
     </packageHasNamedElement>
     <packageHasNamedElement>
@@ -1438,77 +1588,94 @@
               LastKnownLocation="GoudKoortsUML.uml" />
           </generalization>
         </generalsInternal>
-        <ownedAttributesInternal>
-          <property
-            Id="a719ae8b-4ab4-474f-8e9a-40ad27cb1589"
+        <ownedOperationsInternal>
+          <operation
+            Id="db93dd26-7b23-4b8f-8099-c2158bdd6979"
+            name="ColectPoints"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="d3d0cd1c-d964-4307-bca7-38405761e2fe"
+                  direction="Return"
+                  isUnique="false">
+                  <type_NamedElement>
+                    <undefinedTypeMoniker
+                      Id="cd2554a0-a373-470e-9a90-051d2eaa060b"
+                      LastKnownName="int"
+                      LastKnownLocation="GoudKoortsUML.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation
+            Id="b7c4ff3d-0da1-4b01-b513-6fab5ce69515"
             name="Icon"
             isLeaf="false"
             isStatic="false"
-            isReadOnly="false"
-            isUnique="false"
-            isDerived="false"
-            isDerivedUnion="false"
-            aggregation="None"
-            isComposite="false">
-            <appliedStereotypesInternal>
-              <stereotypeInstance
-                Id="b2061b95-ee3e-4573-9e7d-ccea9393fc4b"
-                name="property"
-                profile="CSharpProfile">
-                <propertyInstances>
-                  <stereotypeInstanceHasPropertyInstances
-                    Id="c9c7fef9-144b-4ec0-89e0-68d31df069a4">
-                    <propertyInstance
-                      Id="6f6d2dfe-f96b-4085-8ac7-552d881a5d99"
-                      name="ClrAttributes" />
-                  </stereotypeInstanceHasPropertyInstances>
-                  <stereotypeInstanceHasPropertyInstances
-                    Id="6ef45345-8604-4724-9968-0e956c9313c2">
-                    <propertyInstance
-                      Id="98dd065e-b4cb-41fd-89f7-0ed0987fe25d"
-                      name="Get"
-                      value="none" />
-                  </stereotypeInstanceHasPropertyInstances>
-                  <stereotypeInstanceHasPropertyInstances
-                    Id="9c086d7b-07a8-4278-9dd2-ce0b27bccc60">
-                    <propertyInstance
-                      Id="fb4a4c36-e8fb-4c6a-ac7f-b38802c25980"
-                      name="HasBody"
-                      value="false" />
-                  </stereotypeInstanceHasPropertyInstances>
-                  <stereotypeInstanceHasPropertyInstances
-                    Id="54de19ed-8228-4b30-8976-74a6392f99c1">
-                    <propertyInstance
-                      Id="5f0f0a76-ccd2-4b05-a7d2-68d419c9d84a"
-                      name="IsUnsafe"
-                      value="false" />
-                  </stereotypeInstanceHasPropertyInstances>
-                  <stereotypeInstanceHasPropertyInstances
-                    Id="cd18154a-3f50-43ab-89ce-82262fb9e799">
-                    <propertyInstance
-                      Id="beaac5b1-52f4-4231-8d59-480ea28bd959"
-                      name="Inheritance"
-                      value="none" />
-                  </stereotypeInstanceHasPropertyInstances>
-                  <stereotypeInstanceHasPropertyInstances
-                    Id="9841fcee-4ea6-4998-a09e-000499be7224">
-                    <propertyInstance
-                      Id="f291caff-8ca4-4419-a6dc-3a55bc610bf6"
-                      name="PackageVisibility"
-                      value="internal" />
-                  </stereotypeInstanceHasPropertyInstances>
-                  <stereotypeInstanceHasPropertyInstances
-                    Id="2a889c7d-1707-4bfc-ba9e-897c25e58c8c">
-                    <propertyInstance
-                      Id="51b0d63a-eb22-49a9-94dd-7548025493b9"
-                      name="Set"
-                      value="none" />
-                  </stereotypeInstanceHasPropertyInstances>
-                </propertyInstances>
-              </stereotypeInstance>
-            </appliedStereotypesInternal>
-          </property>
-        </ownedAttributesInternal>
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="98770168-4987-4602-b0fd-6994c3a25fda"
+                  direction="Return"
+                  isUnique="false">
+                  <type_NamedElement>
+                    <undefinedTypeMoniker
+                      Id="d0770144-ba65-45c2-8856-88acae74c1f6"
+                      LastKnownName="char"
+                      LastKnownLocation="GoudKoortsUML.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation
+            Id="de42ab6a-6399-4f1b-a8d4-d8e11c2c1bdd"
+            name="TryMove"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="8df10802-f986-47d9-bd42-c477f3168794"
+                  name="moveable"
+                  direction="In"
+                  isUnique="false">
+                  <type_NamedElement>
+                    <classMoniker
+                      Id="fc0a2dce-fb71-422e-91f7-7b95fefe05ce"
+                      LastKnownName="Moveable"
+                      LastKnownLocation="GoudKoortsUML.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="391c8bcb-c185-493b-be87-6a63e5321b40"
+                  direction="Return"
+                  isUnique="false">
+                  <type_NamedElement>
+                    <undefinedTypeMoniker
+                      Id="6c7ffd29-4ef1-4dfb-aec6-5b33d54f8c46"
+                      LastKnownName="bool"
+                      LastKnownLocation="GoudKoortsUML.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+        </ownedOperationsInternal>
       </class>
     </packageHasNamedElement>
     <packageHasNamedElement>
@@ -1571,77 +1738,56 @@
               LastKnownLocation="GoudKoortsUML.uml" />
           </generalization>
         </generalsInternal>
-        <ownedAttributesInternal>
-          <property
-            Id="0e240ef8-0738-456f-8dce-0b464af4cbc0"
+        <ownedOperationsInternal>
+          <operation
+            Id="e31fba16-7ce7-4116-91a1-199336104591"
+            name="ColectPoints"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="e043e2a3-8a4a-4413-80c2-4f06d92a98d5"
+                  direction="Return"
+                  isUnique="false">
+                  <type_NamedElement>
+                    <undefinedTypeMoniker
+                      Id="cd2554a0-a373-470e-9a90-051d2eaa060b"
+                      LastKnownName="int"
+                      LastKnownLocation="GoudKoortsUML.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation
+            Id="262591db-ad61-4b75-81cc-cc9f3066387e"
             name="Icon"
             isLeaf="false"
             isStatic="false"
-            isReadOnly="false"
-            isUnique="false"
-            isDerived="false"
-            isDerivedUnion="false"
-            aggregation="None"
-            isComposite="false">
-            <appliedStereotypesInternal>
-              <stereotypeInstance
-                Id="9a6471e1-69e0-4541-9ca2-b42513da65ac"
-                name="property"
-                profile="CSharpProfile">
-                <propertyInstances>
-                  <stereotypeInstanceHasPropertyInstances
-                    Id="26fd814d-7e8b-436d-bb35-393912d3d5f4">
-                    <propertyInstance
-                      Id="033f9597-d83b-4ced-8371-68e3eec61b3a"
-                      name="ClrAttributes" />
-                  </stereotypeInstanceHasPropertyInstances>
-                  <stereotypeInstanceHasPropertyInstances
-                    Id="9c3f3ef8-4fc9-4aab-bccd-399b39712a35">
-                    <propertyInstance
-                      Id="9e4c84ff-7230-4df8-a53b-c469a9e4ad43"
-                      name="Get"
-                      value="none" />
-                  </stereotypeInstanceHasPropertyInstances>
-                  <stereotypeInstanceHasPropertyInstances
-                    Id="b1c55911-650e-46fd-8f4b-216f768a0da3">
-                    <propertyInstance
-                      Id="3c6cbf6c-5498-410a-916c-5f233117d300"
-                      name="HasBody"
-                      value="false" />
-                  </stereotypeInstanceHasPropertyInstances>
-                  <stereotypeInstanceHasPropertyInstances
-                    Id="ca87306a-34dc-4bb1-ac40-2c8e780d1684">
-                    <propertyInstance
-                      Id="bc3524e3-89a9-4535-bb68-b1d097c10c56"
-                      name="IsUnsafe"
-                      value="false" />
-                  </stereotypeInstanceHasPropertyInstances>
-                  <stereotypeInstanceHasPropertyInstances
-                    Id="b3de7297-2b36-4a0f-8238-773f3245c739">
-                    <propertyInstance
-                      Id="fddaffed-854f-4c72-a74a-d34bb69915b2"
-                      name="Inheritance"
-                      value="none" />
-                  </stereotypeInstanceHasPropertyInstances>
-                  <stereotypeInstanceHasPropertyInstances
-                    Id="6120f688-f5f8-4d54-9805-14c22fb29049">
-                    <propertyInstance
-                      Id="ebd0d8d1-0a9b-447c-923d-659836ea61f3"
-                      name="PackageVisibility"
-                      value="internal" />
-                  </stereotypeInstanceHasPropertyInstances>
-                  <stereotypeInstanceHasPropertyInstances
-                    Id="b1c638fe-79ae-4e22-abb3-58cd8198f606">
-                    <propertyInstance
-                      Id="0d560695-11ed-4977-816b-deb8cab6452d"
-                      name="Set"
-                      value="none" />
-                  </stereotypeInstanceHasPropertyInstances>
-                </propertyInstances>
-              </stereotypeInstance>
-            </appliedStereotypesInternal>
-          </property>
-        </ownedAttributesInternal>
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="28e5bcac-173d-467b-a4c1-ad3a29e4e688"
+                  direction="Return"
+                  isUnique="false">
+                  <type_NamedElement>
+                    <undefinedTypeMoniker
+                      Id="d0770144-ba65-45c2-8856-88acae74c1f6"
+                      LastKnownName="char"
+                      LastKnownLocation="GoudKoortsUML.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+        </ownedOperationsInternal>
       </class>
     </packageHasNamedElement>
     <packageHasNamedElement>
@@ -1704,6 +1850,56 @@
               LastKnownLocation="GoudKoortsUML.uml" />
           </generalization>
         </generalsInternal>
+        <ownedOperationsInternal>
+          <operation
+            Id="508f2113-2986-4d5c-9170-9e4263a9436b"
+            name="ColectPoints"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="30b862e0-08e5-4b30-90b7-af825bef3fd5"
+                  direction="Return"
+                  isUnique="false">
+                  <type_NamedElement>
+                    <undefinedTypeMoniker
+                      Id="cd2554a0-a373-470e-9a90-051d2eaa060b"
+                      LastKnownName="int"
+                      LastKnownLocation="GoudKoortsUML.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation
+            Id="51e390d3-f62b-4c30-bee9-fdda888587df"
+            name="Icon"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="2518586c-793a-4053-b75d-ee899a66a147"
+                  direction="Return"
+                  isUnique="false">
+                  <type_NamedElement>
+                    <undefinedTypeMoniker
+                      Id="d0770144-ba65-45c2-8856-88acae74c1f6"
+                      LastKnownName="char"
+                      LastKnownLocation="GoudKoortsUML.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+        </ownedOperationsInternal>
       </class>
     </packageHasNamedElement>
     <packageHasNamedElement>
@@ -1756,6 +1952,48 @@
             </propertyInstances>
           </stereotypeInstance>
         </appliedStereotypesInternal>
+        <targetEnds>
+          <association
+            Id="25ea5ca5-6640-4876-8180-30ba0125d88d"
+            isDerived="false"
+            sourceEndRoleName="Moveable"
+            targetEndRoleName="Track"
+            isLeaf="false"
+            name="Position"
+            isAbstract="false">
+            <classMoniker
+              Id="d236bb7f-974b-41d4-8c56-8663be3928af"
+              LastKnownName="Track"
+              LastKnownLocation="GoudKoortsUML.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="658411b5-496a-46af-a9e9-062b8c7ca912"
+                  name="Moveable"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="9cfee3d8-98af-4b4a-9591-cf6da175d6fe"
+                  name="Track"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+        </targetEnds>
         <ownedAttributesInternal>
           <property
             Id="e748f4c0-38fc-49f4-8efd-246b9dd0ef9f"
@@ -1951,6 +2189,30 @@
               </stereotypeInstance>
             </appliedStereotypesInternal>
           </operation>
+          <operation
+            Id="41258262-ed18-4442-a3c3-99c8f87c6107"
+            name="Icon"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="ed9f9422-5873-4fc3-8920-f5a3cc0ac343"
+                  direction="Return"
+                  isUnique="false">
+                  <type_NamedElement>
+                    <undefinedTypeMoniker
+                      Id="d0770144-ba65-45c2-8856-88acae74c1f6"
+                      LastKnownName="char"
+                      LastKnownLocation="GoudKoortsUML.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
         </ownedOperationsInternal>
       </class>
     </packageHasNamedElement>
@@ -2004,6 +2266,32 @@
             </propertyInstances>
           </stereotypeInstance>
         </appliedStereotypesInternal>
+        <ownedOperationsInternal>
+          <operation
+            Id="c861ff7b-e4c9-406c-ab5d-2c3124366e51"
+            name="printMain"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false" />
+          <operation
+            Id="e84e17b5-85dc-47a0-b3f8-30e07ad432d3"
+            name="printEnd"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false" />
+          <operation
+            Id="69854606-f56f-4661-9ddc-ffaf8e18b6bf"
+            name="printLevel"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false" />
+        </ownedOperationsInternal>
       </class>
     </packageHasNamedElement>
     <packageHasNamedElement>
@@ -2056,6 +2344,70 @@
             </propertyInstances>
           </stereotypeInstance>
         </appliedStereotypesInternal>
+        <ownedOperationsInternal>
+          <operation
+            Id="f571ef1d-1410-410e-93fd-32e4655b9458"
+            name="askInputString"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="e5af9452-b3b7-4c2f-bfa4-4016ee5796c6"
+                  name="question"
+                  direction="In"
+                  isUnique="false">
+                  <type_NamedElement>
+                    <undefinedTypeMoniker
+                      Id="bc7f7526-6b2f-4eca-b3ce-2af9e42c002d"
+                      LastKnownName="string"
+                      LastKnownLocation="GoudKoortsUML.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="0f5c75e5-9a0f-4b78-8992-c23c4537590f"
+                  direction="Return"
+                  isUnique="false">
+                  <type_NamedElement>
+                    <undefinedTypeMoniker
+                      Id="bc7f7526-6b2f-4eca-b3ce-2af9e42c002d"
+                      LastKnownName="string"
+                      LastKnownLocation="GoudKoortsUML.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation
+            Id="1314cd18-9c90-4904-b5a6-154ef3c1045a"
+            name="askInputKey"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="0856d781-dce5-4be2-94b6-48cb31ba7680"
+                  direction="Return"
+                  isUnique="false">
+                  <type_NamedElement>
+                    <undefinedTypeMoniker
+                      Id="7aa71cc0-78f3-4c90-9092-3807e6fc2b67"
+                      LastKnownName="ConsoleKeyInfo"
+                      LastKnownLocation="GoudKoortsUML.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+        </ownedOperationsInternal>
       </class>
     </packageHasNamedElement>
     <packageHasNamedElement>
@@ -2266,6 +2618,26 @@
             </relationshipOwnedElementsInternal>
           </association>
         </targetEnds>
+        <ownedAttributesInternal>
+          <property
+            Id="9df01a38-c99f-483c-9338-323c4ceebd84"
+            name="A"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <type_NamedElement>
+              <undefinedTypeMoniker
+                Id="8425fe7d-a2c3-4e41-b7e7-76839f7a622a"
+                LastKnownName="System.Threading.Thread"
+                LastKnownLocation="GoudKoortsUML.uml" />
+            </type_NamedElement>
+          </property>
+        </ownedAttributesInternal>
         <ownedOperationsInternal>
           <operation
             Id="332c662f-5f50-45b8-bf44-367d7bc06c60"
@@ -2385,6 +2757,63 @@
               </stereotypeInstance>
             </appliedStereotypesInternal>
           </operation>
+          <operation
+            Id="8e5bc4bb-9030-47e6-9504-4198931511e4"
+            name="loadMainMenu"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false" />
+          <operation
+            Id="e411f5a9-f9fd-41c0-9f40-147d68ecc8bb"
+            name="Play"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false" />
+          <operation
+            Id="779c73c7-9a85-4dc9-9c57-d8ebe2501ef4"
+            name="handleInput"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="607af75d-7985-4784-bc5c-8065017a4187"
+                  name="input"
+                  direction="In"
+                  isUnique="false">
+                  <type_NamedElement>
+                    <undefinedTypeMoniker
+                      Id="7c939ef3-8a45-4eee-b298-b216dda79e9f"
+                      LastKnownName="ConsoleKey"
+                      LastKnownLocation="GoudKoortsUML.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation
+            Id="99c73b35-d54c-4bf5-a65d-32502761bc3c"
+            name="gameOver"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false" />
+          <operation
+            Id="fab230b5-df8e-4e94-b073-0c31a23cc133"
+            name="Quit"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false" />
         </ownedOperationsInternal>
       </class>
     </packageHasNamedElement>
@@ -2500,7 +2929,7 @@
         <ownedOperationsInternal>
           <operation
             Id="be861432-4cf9-45b1-bbfd-0d844bca87af"
-            name="Swap"
+            name="SwapNext"
             isLeaf="false"
             isStatic="false"
             isAbstract="false"
@@ -2556,6 +2985,54 @@
                 </propertyInstances>
               </stereotypeInstance>
             </appliedStereotypesInternal>
+          </operation>
+          <operation
+            Id="b3d535d0-0f6f-40ac-bf42-ecc7f504ec18"
+            name="ColectPoints"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="13789551-2686-4118-9289-6c747596cb32"
+                  direction="Return"
+                  isUnique="false">
+                  <type_NamedElement>
+                    <undefinedTypeMoniker
+                      Id="cd2554a0-a373-470e-9a90-051d2eaa060b"
+                      LastKnownName="int"
+                      LastKnownLocation="GoudKoortsUML.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation
+            Id="0959e0a1-3a9c-48e3-b6a1-53a40400ac23"
+            name="Icon"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="e9a45cbb-76b7-44df-aa2e-bedb2ef22fa6"
+                  direction="Return"
+                  isUnique="false">
+                  <type_NamedElement>
+                    <undefinedTypeMoniker
+                      Id="d0770144-ba65-45c2-8856-88acae74c1f6"
+                      LastKnownName="char"
+                      LastKnownLocation="GoudKoortsUML.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
           </operation>
         </ownedOperationsInternal>
       </class>
@@ -2708,6 +3185,58 @@
                   <upperValueInternal>
                     <literalString
                       Id="84076027-f63e-4d6b-be55-34d2714e7c99"
+                      name="Upper"
+                      value="*" />
+                  </upperValueInternal>
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+          <association
+            Id="84a43bdd-1108-484f-ac2f-8b63b9e1c2c7"
+            isDerived="false"
+            sourceEndRoleName="Game"
+            targetEndRoleName="Track"
+            isLeaf="false"
+            isAbstract="false">
+            <classMoniker
+              Id="d236bb7f-974b-41d4-8c56-8663be3928af"
+              LastKnownName="Track"
+              LastKnownLocation="GoudKoortsUML.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="9d4bde11-4f51-44c5-9b87-8713425d6996"
+                  name="Game"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="ee2f2fd7-5a07-4bb5-8460-8e6e41d465d4"
+                  name="Track"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false">
+                  <lowerValueInternal>
+                    <literalString
+                      Id="5c31a62a-d121-4f54-bdbf-484dff4c01b4"
+                      name="Lower"
+                      value="*" />
+                  </lowerValueInternal>
+                  <upperValueInternal>
+                    <literalString
+                      Id="4d30adf5-1bd3-4451-8c07-909f46a2a74c"
                       name="Upper"
                       value="*" />
                   </upperValueInternal>
@@ -3091,6 +3620,101 @@
               </operationHasOwnedParameters>
             </ownedParameters>
           </operation>
+          <operation
+            Id="a13c9221-742b-4afe-a43b-2c26001b0edb"
+            name="Speed"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="1c56bca1-862d-4524-8d0c-8778badb8260"
+                  direction="Return"
+                  isUnique="false">
+                  <type_NamedElement>
+                    <undefinedTypeMoniker
+                      Id="cd2554a0-a373-470e-9a90-051d2eaa060b"
+                      LastKnownName="int"
+                      LastKnownLocation="GoudKoortsUML.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation
+            Id="1cc8146d-e158-4def-ada6-ecdff224600d"
+            name="CollisionCheck"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="245626b9-75b9-4e5e-98d3-8b912e9cdd56"
+                  direction="Return"
+                  isUnique="false">
+                  <type_NamedElement>
+                    <undefinedTypeMoniker
+                      Id="6c7ffd29-4ef1-4dfb-aec6-5b33d54f8c46"
+                      LastKnownName="bool"
+                      LastKnownLocation="GoudKoortsUML.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation
+            Id="7420e127-46f7-432c-8a53-65a46722343c"
+            name="fillField"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false" />
+          <operation
+            Id="ccdb3652-ca31-4eca-a542-69080a5e440b"
+            name="NextTrack"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="34b4f08d-8ad8-41ae-ae43-a35c5a2c450a"
+                  name="w"
+                  direction="In"
+                  isUnique="false">
+                  <type_NamedElement>
+                    <classMoniker
+                      Id="38bacbac-d72d-42aa-9751-8e31830322fa"
+                      LastKnownName="Warehouse"
+                      LastKnownLocation="GoudKoortsUML.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="61e2d41d-c375-4966-b073-4a6f531b1d24"
+                  name="t"
+                  direction="In"
+                  isUnique="false">
+                  <type_NamedElement>
+                    <classMoniker
+                      Id="d236bb7f-974b-41d4-8c56-8663be3928af"
+                      LastKnownName="Track"
+                      LastKnownLocation="GoudKoortsUML.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
         </ownedOperationsInternal>
       </class>
     </packageHasNamedElement>
@@ -3161,8 +3785,8 @@
         </generalsInternal>
         <ownedAttributesInternal>
           <property
-            Id="257d69e4-82d2-4b97-8e9c-f23dc6f79b16"
-            name="Icon"
+            Id="430297e0-1571-47dd-ba39-f60263cc0c77"
+            name="isOpen"
             isLeaf="false"
             isStatic="false"
             isReadOnly="false"
@@ -3171,63 +3795,12 @@
             isDerivedUnion="false"
             aggregation="None"
             isComposite="false">
-            <appliedStereotypesInternal>
-              <stereotypeInstance
-                Id="e9203ef7-ac68-46cf-a0d0-b3c511076e60"
-                name="property"
-                profile="CSharpProfile">
-                <propertyInstances>
-                  <stereotypeInstanceHasPropertyInstances
-                    Id="c48b4baf-44a9-44e1-b6ee-66792679eff0">
-                    <propertyInstance
-                      Id="a83a5e62-98ce-48c1-9f5e-9e03cc969e0e"
-                      name="ClrAttributes" />
-                  </stereotypeInstanceHasPropertyInstances>
-                  <stereotypeInstanceHasPropertyInstances
-                    Id="750f75d3-d3aa-4883-a321-9fc735c5d316">
-                    <propertyInstance
-                      Id="c7d4fc50-1e8e-40d2-b84c-0e7022fb1edc"
-                      name="Get"
-                      value="none" />
-                  </stereotypeInstanceHasPropertyInstances>
-                  <stereotypeInstanceHasPropertyInstances
-                    Id="ed51ecb2-28e2-4dfc-8b04-9b7439011a0a">
-                    <propertyInstance
-                      Id="f7ac4289-76bb-4867-aab2-a2bb5903381c"
-                      name="HasBody"
-                      value="false" />
-                  </stereotypeInstanceHasPropertyInstances>
-                  <stereotypeInstanceHasPropertyInstances
-                    Id="0ece5c4b-85aa-4892-b630-cb51f2e59924">
-                    <propertyInstance
-                      Id="18c30e75-289d-4b85-8f1b-99797d711a44"
-                      name="IsUnsafe"
-                      value="false" />
-                  </stereotypeInstanceHasPropertyInstances>
-                  <stereotypeInstanceHasPropertyInstances
-                    Id="240aee08-0ecb-41d0-bafc-c497a347a38a">
-                    <propertyInstance
-                      Id="6266540c-60f8-458d-b1ee-dfd02d46b33d"
-                      name="Inheritance"
-                      value="none" />
-                  </stereotypeInstanceHasPropertyInstances>
-                  <stereotypeInstanceHasPropertyInstances
-                    Id="cb1537ae-8010-4d9a-a966-0213049309af">
-                    <propertyInstance
-                      Id="e527b372-1406-4e33-bf1a-07fa40a9a1da"
-                      name="PackageVisibility"
-                      value="internal" />
-                  </stereotypeInstanceHasPropertyInstances>
-                  <stereotypeInstanceHasPropertyInstances
-                    Id="eded499a-9801-4b7e-a035-b5efe790f56d">
-                    <propertyInstance
-                      Id="8f5f3b8e-152a-40d9-b121-2180d71798d0"
-                      name="Set"
-                      value="none" />
-                  </stereotypeInstanceHasPropertyInstances>
-                </propertyInstances>
-              </stereotypeInstance>
-            </appliedStereotypesInternal>
+            <type_NamedElement>
+              <undefinedTypeMoniker
+                Id="6c7ffd29-4ef1-4dfb-aec6-5b33d54f8c46"
+                LastKnownName="bool"
+                LastKnownLocation="GoudKoortsUML.uml" />
+            </type_NamedElement>
           </property>
         </ownedAttributesInternal>
         <ownedOperationsInternal>
@@ -3290,6 +3863,62 @@
               </stereotypeInstance>
             </appliedStereotypesInternal>
           </operation>
+          <operation
+            Id="a3c3693b-12d0-48f5-a70d-dd67ce343e66"
+            name="ColectPoints"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="0b8d09d6-8033-4841-9bd1-11d4cd5fc64f"
+                  direction="Return"
+                  isUnique="false">
+                  <type_NamedElement>
+                    <undefinedTypeMoniker
+                      Id="cd2554a0-a373-470e-9a90-051d2eaa060b"
+                      LastKnownName="int"
+                      LastKnownLocation="GoudKoortsUML.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation
+            Id="b53498cf-bcfb-41a2-bd46-8919777502e7"
+            name="Icon"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="1275f2f3-fe2b-476a-ae66-ce4ce943578e"
+                  direction="Return"
+                  isUnique="false">
+                  <type_NamedElement>
+                    <undefinedTypeMoniker
+                      Id="d0770144-ba65-45c2-8856-88acae74c1f6"
+                      LastKnownName="char"
+                      LastKnownLocation="GoudKoortsUML.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation
+            Id="46b82f79-6db8-4569-ba1f-e67b95f52893"
+            name="SwapNext"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false" />
         </ownedOperationsInternal>
       </class>
     </packageHasNamedElement>
@@ -3302,6 +3931,36 @@
       <undefinedType
         Id="06dd0054-0a30-40cc-b449-94d9d8d73a95"
         name="Char" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <undefinedType
+        Id="6c7ffd29-4ef1-4dfb-aec6-5b33d54f8c46"
+        name="bool" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <undefinedType
+        Id="d0770144-ba65-45c2-8856-88acae74c1f6"
+        name="char" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <undefinedType
+        Id="7c939ef3-8a45-4eee-b298-b216dda79e9f"
+        name="ConsoleKey" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <undefinedType
+        Id="8425fe7d-a2c3-4e41-b7e7-76839f7a622a"
+        name="System.Threading.Thread" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <undefinedType
+        Id="bc7f7526-6b2f-4eca-b3ce-2af9e42c002d"
+        name="string" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <undefinedType
+        Id="7aa71cc0-78f3-4c90-9092-3807e6fc2b67"
+        name="ConsoleKeyInfo" />
     </packageHasNamedElement>
   </packagedElements>
   <primitiveType
