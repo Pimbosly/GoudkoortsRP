@@ -19,7 +19,7 @@ public class RangeArea : Track
 
     public override int CollectPoints()
     {
-        throw new NotImplementedException();
+        return 0;
     }
 
     public override char Icon()

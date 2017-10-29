@@ -11,9 +11,17 @@ using System.Text;
 
 public class Dock : Track
 {
+    public Ship S
+    {
+        get;
+        set;
+    }
     public override int CollectPoints()
     {
-        throw new NotImplementedException();
+        //return 10 at full ship
+        //return 1 at 1 cart
+        //TODO
+        return 0;
     }
 
     public override char Icon()
@@ -26,6 +34,12 @@ public class Dock : Track
         {
             return Moveable[0].Icon();
         }
+    }
+
+    public void EmptyCart(Cart c)
+    {
+        c.Empty();
+
     }
 
 

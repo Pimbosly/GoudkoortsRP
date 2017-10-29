@@ -43,15 +43,19 @@ namespace GoudKoorts.Controller
                             Console.WriteLine(" ");
                             break;
                         case '8':
-                            newObject = new Ship();
+                            newObject = new NormalTrack();
+                            newObject.Moveable.Add(new Ship());
                             break;
                         case 'W':
                             newObject = new Warehouse();
                             break;
                         case 'S':
                             newObject = new Split();
+                            break;
                         case 'M':
-                            newObject = new Merge():
+                            newObject = new Merge();
+                            break;
+
                     }
                 }
             }

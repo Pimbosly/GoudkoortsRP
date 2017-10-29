@@ -11,6 +11,11 @@ using System.Text;
 
 public abstract class Track
 {
+
+    public Track()
+    {
+        Moveable = new List<Moveable>();
+    }
     public virtual int x
     {
         get;
@@ -74,6 +79,7 @@ public abstract class Track
 	{
 		if(nextIsPrevious(this))
         {
+            NextTrack = moveable.Position;
             NextTrack.Moveable.Add(moveable);
             NextTrack.CheckTooMuch();
 

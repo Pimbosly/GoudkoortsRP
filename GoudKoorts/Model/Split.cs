@@ -42,7 +42,7 @@ public class Split : Switch
 
     public override int CollectPoints()
     {
-        throw new NotImplementedException();
+        return 0;
     }
 }
 
