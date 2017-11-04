@@ -92,6 +92,10 @@ public class Ship : Moveable
         else
         {
             Position.TryMove(this);
+            if(Position.x == 7 && Position.y == 0)
+            {
+                isDocked = true;
+            }
         }
 	}
 

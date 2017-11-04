@@ -38,8 +38,11 @@ public class Dock : Track
 
     public void EmptyCart(Cart c)
     {
-        c.Empty();
-
+        if (S.isDocked)
+        {
+            c.Empty();
+            S.AddCargo();
+        }
     }
 
 

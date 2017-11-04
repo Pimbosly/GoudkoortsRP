@@ -19,11 +19,7 @@ public class Game
     public int Score;
     
    // public int Speed = 5000;
-   public virtual Dock Sea
-    {
-        get;
-        set;
-    }
+
 	public virtual List<Warehouse> Warehouse
 	{
 		get;
