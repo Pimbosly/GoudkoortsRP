@@ -123,20 +123,27 @@ public class GameController
     {
         if (!g.gameOver)
         {
+            Switch s;
             switch (input)
             {
                 case ConsoleKey.NumPad1:
-                    Merge m = (Merge)g._track[9, 4];
-                    m.swapNext();
+                    s = (Switch)g._track[9, 4];
+                    s.swapNext();
                     break;
                 case ConsoleKey.NumPad2:
+                    s = (Switch)g._track[5, 4];
+                    s.swapNext();
                     break;
                 case ConsoleKey.NumPad3:
+                    s = (Switch)g._track[3, 4];
+                    s.swapNext();
                     break;
                 case ConsoleKey.NumPad4:
+                    s = (Switch)g._track[6, 6];
+                    s.swapNext();
                     break;
                 case ConsoleKey.NumPad5:
-                    Switch s = (Switch)g._track[8, 6];
+                    s = (Switch)g._track[8, 6];
                     s.swapNext();
                     break;
                 case ConsoleKey.Q:
