@@ -38,8 +38,6 @@ public class Split : Switch
         Track tempNext2 = NextTrack;
         NextTrack = tempNext;
         tempNext = tempNext2;
-
-        Swap();
     }
 
     public override int CollectPoints()

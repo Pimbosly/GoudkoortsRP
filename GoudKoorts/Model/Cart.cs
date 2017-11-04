@@ -17,10 +17,11 @@ public class Cart : Moveable
 		set;
 	}
 
-    public Cart()
+    public Cart(Track w)
     {
         this.canMove = true;
         this.isFull = true;
+        this.Position = w;
     }
 
 	public override void Empty()
@@ -35,7 +36,7 @@ public class Cart : Moveable
     {
         if(isFull)
         {
-            return '€';
+            return '$';
         }
         else
         {
@@ -45,7 +46,10 @@ public class Cart : Moveable
 
     public override void Move()
 	{
-        Position.TryMove(this);
+        if(Position.TryMove(this))
+        {
+            Position = Position.NextTrack;
+        }
 	}
 
 }

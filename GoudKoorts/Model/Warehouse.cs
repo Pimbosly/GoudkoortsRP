@@ -18,7 +18,14 @@ public class Warehouse : Track
 
     public override char Icon()
     {
-        return 'W';
+        if (Moveable.Count == 0)
+        {
+            return 'W';
+        }
+        else
+        {
+            return Moveable[0].Icon();
+        }
     }
 }
 

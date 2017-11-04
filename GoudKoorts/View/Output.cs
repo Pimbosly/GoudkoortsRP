@@ -37,7 +37,9 @@ public class Output
         Console.WriteLine("└────────────┘");
         Console.WriteLine("─────────────────────────────────────────────");
         Console.WriteLine("");
-        Console.WriteLine("Use Numpad ( 1 | 2 | 3 | 4 | 5 )");
+        Console.WriteLine("Use Numpad ( 4 | 5 | 6 )");
+        Console.WriteLine("Use Numpad (   | 2 | 3 )");
+        Console.WriteLine();
 
 
 

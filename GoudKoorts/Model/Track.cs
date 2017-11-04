@@ -79,7 +79,7 @@ public abstract class Track
 	{
 		if(nextIsPrevious(this))
         {
-            NextTrack = moveable.Position;
+            moveable.Position = NextTrack;
             NextTrack.Moveable.Add(moveable);
             NextTrack.CheckTooMuch();
 

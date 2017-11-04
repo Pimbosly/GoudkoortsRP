@@ -50,11 +50,23 @@ public class Game
 
 	public virtual void addCart(Warehouse warehouse)
 	{
-        Cart k = new Cart();
-        warehouse.Moveable.Add(k);
-	}
+        //Cart k = new Cart(warehouse);
+        //warehouse.Moveable.Add(k);
+        //Moveable.Add(k);
+        Cart k = new Cart(Warehouse[0]);
+        Warehouse[0].Moveable.Add(k);
+        Moveable.Add(k);
 
-	public virtual Warehouse randomWarehouse()
+        Cart a = new Cart(Warehouse[1]);
+        Warehouse[1].Moveable.Add(a);
+        Moveable.Add(a);
+
+        Cart b = new Cart(Warehouse[2]);
+        Warehouse[2].Moveable.Add(b);
+        Moveable.Add(b);
+    }
+
+    public virtual Warehouse randomWarehouse()
 	{
         Random rnd = new Random();
         int nr = rnd.Next(0, 3);
@@ -93,6 +105,8 @@ public class Game
 
     public void fillField()
     {
+        Switch c;
+
         _track[0, 1] = new NormalTrack();
         _track[1, 1] = new NormalTrack();
         _track[2, 1] = new NormalTrack();
@@ -162,6 +176,9 @@ public class Game
         Warehouse.Add((Warehouse)_track[0, 5]);
         Warehouse.Add((Warehouse)_track[0, 7]);
 
+        //testKAR
+        addCart(randomWarehouse());
+
         //water
         _track[0, 0] = new NormalTrack();
         _track[1, 0] = new NormalTrack();
@@ -181,6 +198,7 @@ public class Game
         Dock dock = (Dock)_track[9, 1];
         dock.S = (Ship)_track[9, 0].Moveable[0];
 
+        NextTrack(Warehouse[2], _track[1, 7]);
         NextTrack(Warehouse[2], _track[2, 7]);
         NextTrack(Warehouse[2], _track[3, 7]);
         NextTrack(Warehouse[2], _track[4, 7]);
@@ -204,6 +222,50 @@ public class Game
         NextTrack(Warehouse[2], _track[3, 8]);
         NextTrack(Warehouse[2], _track[2, 8]);
         NextTrack(Warehouse[2], _track[1, 8]);
+
+        c = (Switch)_track[6, 6];
+        c.Swap();
+
+        c = (Switch)_track[8, 6];
+        c.Swap();
+
+        NextTrack(Warehouse[1], _track[1, 5]);
+        NextTrack(Warehouse[1], _track[2, 5]);
+        NextTrack(Warehouse[1], _track[3, 5]);
+        NextTrack(Warehouse[1], _track[3, 4]);
+        NextTrack(Warehouse[1], _track[4, 4]);
+        NextTrack(Warehouse[1], _track[5, 4]);
+        NextTrack(Warehouse[1], _track[5, 5]);
+        NextTrack(Warehouse[1], _track[6, 5]);
+        NextTrack(Warehouse[1], _track[6, 6]);
+        NextTrack(Warehouse[1], _track[8, 5]);
+        NextTrack(Warehouse[1], _track[9, 5]);
+        NextTrack(Warehouse[1], _track[9, 4]);
+        NextTrack(Warehouse[1], _track[10, 4]);
+        NextTrack(Warehouse[1], _track[11, 4]);
+        NextTrack(Warehouse[1], _track[11, 3]);
+        NextTrack(Warehouse[1], _track[11, 2]);
+        NextTrack(Warehouse[1], _track[11, 1]);
+        NextTrack(Warehouse[1], _track[10, 1]);
+        NextTrack(Warehouse[1], _track[9, 1]);
+        NextTrack(Warehouse[1], _track[8, 1]);
+        NextTrack(Warehouse[1], _track[7, 1]);
+        NextTrack(Warehouse[1], _track[6, 1]);
+        NextTrack(Warehouse[1], _track[5, 1]);
+        NextTrack(Warehouse[1], _track[4, 1]);
+        NextTrack(Warehouse[1], _track[3, 1]);
+        NextTrack(Warehouse[1], _track[2, 1]);
+        NextTrack(Warehouse[1], _track[1, 1]);
+        NextTrack(Warehouse[1], _track[0, 1]);
+
+        c = (Switch)_track[3, 4];
+        c.Swap();
+
+        c = (Switch)_track[5, 4];
+        c.Swap();
+
+        c = (Switch)_track[9, 4];
+        c.Swap();
 
         NextTrack(Warehouse[0], _track[1, 3]);
         NextTrack(Warehouse[0], _track[2, 3]);

@@ -126,25 +126,25 @@ public class GameController
             Switch s;
             switch (input)
             {
-                case ConsoleKey.NumPad1:
-                    s = (Switch)g._track[9, 4];
-                    s.swapNext();
-                    break;
-                case ConsoleKey.NumPad2:
-                    s = (Switch)g._track[5, 4];
-                    s.swapNext();
-                    break;
-                case ConsoleKey.NumPad3:
-                    s = (Switch)g._track[3, 4];
-                    s.swapNext();
-                    break;
                 case ConsoleKey.NumPad4:
-                    s = (Switch)g._track[6, 6];
-                    s.swapNext();
+                    s = (Switch)g._track[3, 4];
+                    s.Swap();
                     break;
                 case ConsoleKey.NumPad5:
+                    s = (Switch)g._track[5, 4];
+                    s.Swap();
+                    break;
+                case ConsoleKey.NumPad6:
+                    s = (Switch)g._track[9, 4];
+                    s.Swap();
+                    break;
+                case ConsoleKey.NumPad2:
+                    s = (Switch)g._track[6, 6];
+                    s.Swap();
+                    break;
+                case ConsoleKey.NumPad3:
                     s = (Switch)g._track[8, 6];
-                    s.swapNext();
+                    s.Swap();
                     break;
                 case ConsoleKey.Q:
                     g.gameOver = true;
@@ -155,7 +155,7 @@ public class GameController
                     break;
             }
 
-            //printBoard();
+            printBoard();
         }
     }
 
@@ -180,7 +180,7 @@ public class GameController
     {
         output.printLevel();
         string s = "";
-        for (int y = 0; y < 8; y++)
+        for (int y = 0; y < 10; y++)
         {
             for (int x = 0; x < 12; x++)
             {
