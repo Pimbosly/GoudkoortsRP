@@ -46,6 +46,8 @@ public class Merge : Switch
         Track tempPrevious2 = NextTrack;
         PreviousTrack = tempPrevious;
         tempPrevious = tempPrevious2;
+
+        Swap();
     }
 }
 

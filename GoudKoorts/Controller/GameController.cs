@@ -18,11 +18,13 @@ public class GameController
     Input input = new Input();
     System.Threading.Thread A;
 
-    Game g = new Game();
+    Game g;
 
     public GameController()
     {
+        g = new Game();
         loadMainMenu();
+        
     }
     public virtual Game Game
 	{
@@ -45,7 +47,10 @@ public class GameController
 	public virtual void loadMainMenu()
 	{
         Boolean mainMenu = true;
-        g.gameOver = false;
+        if (g.gameOver == true)
+        {
+            g.gameOver = false;
+        }
         output.printMain();
         
         while (mainMenu)
@@ -68,7 +73,10 @@ public class GameController
         System.Threading.ThreadStart(Play));
 
         A.Start();
-
+        if (g.gameOver == true)
+        {
+            g.gameOver = false;
+        }
         while (!g.gameOver)
         {
             handleInput(input.askInputKey().Key);
@@ -88,7 +96,7 @@ public class GameController
         
             while (!g.gameOver)
             {
-                output.printLevel();
+                printBoard();
                 A.Join(g.Speed());
                 
                 if (g.Moveable != null)
@@ -118,19 +126,18 @@ public class GameController
             switch (input)
             {
                 case ConsoleKey.NumPad1:
-                    Console.WriteLine("1");
+                    Merge m = (Merge)g._track[9, 4];
+                    m.swapNext();
                     break;
                 case ConsoleKey.NumPad2:
-                    Console.WriteLine("2");
                     break;
                 case ConsoleKey.NumPad3:
-                    Console.WriteLine("3");
                     break;
                 case ConsoleKey.NumPad4:
-                    Console.WriteLine("4");
                     break;
                 case ConsoleKey.NumPad5:
-                    Console.WriteLine("5");
+                    Switch s = (Switch)g._track[8, 6];
+                    s.swapNext();
                     break;
                 case ConsoleKey.Q:
                     g.gameOver = true;
@@ -140,7 +147,8 @@ public class GameController
                     Console.WriteLine("Invalid input");
                     break;
             }
-           //output.loadLevel();
+
+            //printBoard();
         }
     }
 
@@ -159,6 +167,30 @@ public class GameController
         loadMainMenu();
 
 
+    }
+
+    public void printBoard()
+    {
+        output.printLevel();
+        string s = "";
+        for (int y = 0; y < 8; y++)
+        {
+            for (int x = 0; x < 12; x++)
+            {
+                if (g._track[x, y] != null)
+                {
+                    s = s + g._track[x, y].Icon();
+                }
+                else
+                {
+                    s = s + " ";
+                }
+                
+            }
+            Console.WriteLine(s);
+            s = "";
+        }
+        
     }
 
 }
