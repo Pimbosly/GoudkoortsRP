@@ -175,6 +175,7 @@ public class GameController
         Console.WriteLine("");
         Console.WriteLine("Press any key to continu");
         ConsoleKeyInfo cki = input.askInputKey();
+        g = new Game();
         loadMainMenu();
 
 
@@ -183,7 +184,7 @@ public class GameController
     public void printBoard()
     {
         output.printLevel();
-        Console.WriteLine(g.Score);
+        Console.WriteLine("Your score = " + g.Score);
         Console.WriteLine(g.Speed() / 100);
         Console.WriteLine("");
         string s = "";

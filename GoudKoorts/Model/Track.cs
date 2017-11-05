@@ -43,8 +43,8 @@ public abstract class Track
 
 	public virtual bool nextIsPrevious(Track track)
 	{
-        if (NextTrack == null)
-        {
+        //if (NextTrack == null)
+        //{
             if (track.NextTrack.PreviousTrack == track)
             {
                 return true;
@@ -53,7 +53,7 @@ public abstract class Track
             {
                 return false;
             }
-        }
+        //}
 	}
 
     public virtual void CheckTooMuch()
