@@ -26,7 +26,7 @@ public class Dock : Track
 
     public override char Icon()
     {
-        if (Moveable != null)
+        if (Moveable.Count == 0)
         {
             return 'D';
         }

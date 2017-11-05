@@ -57,9 +57,9 @@ public class Game
         Warehouse[0].Moveable.Add(k);
         Moveable.Add(k);
 
-        Cart a = new Cart(Warehouse[1]);
-        Warehouse[1].Moveable.Add(a);
-        Moveable.Add(a);
+        //Cart a = new Cart(Warehouse[1]);
+        //Warehouse[1].Moveable.Add(a);
+        //Moveable.Add(a);
 
         Cart b = new Cart(Warehouse[2]);
         Warehouse[2].Moveable.Add(b);

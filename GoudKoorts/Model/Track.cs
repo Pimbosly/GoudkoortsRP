@@ -16,16 +16,6 @@ public abstract class Track
     {
         Moveable = new List<Moveable>();
     }
-    public virtual int x
-    {
-        get;
-        set;
-    }
-    public virtual int y
-    {
-        get;
-        set;
-    }
     public virtual bool IsTooMuch
     {
         get;
@@ -53,6 +43,7 @@ public abstract class Track
 
 	public virtual bool nextIsPrevious(Track track)
 	{
+        //if next track == null
 		if(track.NextTrack.PreviousTrack == track)
         {
             return true;
