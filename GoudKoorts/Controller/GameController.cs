@@ -17,14 +17,14 @@ public class GameController
     Output output = new Output();
     Input input = new Input();
     System.Threading.Thread A;
-
+    int _carcount;
     Game g;
 
     public GameController()
     {
+        _carcount = 5;
         g = new Game();
         loadMainMenu();
-        
     }
     public virtual Game Game
 	{
@@ -93,28 +93,39 @@ public class GameController
 
     public void Play()
     {
-        
-            while (!g.gameOver)
+        int turncount = 4;
+        while (!g.gameOver)
+        {
+            printBoard();
+            A.Join(g.Speed());
+
+            if (g.Moveable != null)
             {
-                printBoard();
-                A.Join(g.Speed());
-                
-                if (g.Moveable != null)
+                if (g.Moveable.Count() != 0)
                 {
-                    if (g.Moveable.Count() != 0)
+                    foreach (Moveable m in g.Moveable)
                     {
-                        
-                        foreach (Moveable m in g.Moveable)
+                        if (!m.Move())
                         {
-                            m.Move();
-                            if (m.Position == g._track[9, 1])
-                            {
-                                g.atDock(m);
-                            }
+                            g.moveCart(g.randomWarehouse(), (Cart)m);
                         }
+                        if (m.Position == g._track[9, 1])
+                        {
+                            g.atDock(m);
+                        }                       
+                    }
+                    turncount--;
+                    if (turncount == 0)
+                    {
+                        if(_carcount > g.Moveable.Count)
+                        {
+                            g.addCart(g.randomWarehouse());
+                        }
+                        turncount = 4;
                     }
                 }
             }
+        }
 
         Quit();
 

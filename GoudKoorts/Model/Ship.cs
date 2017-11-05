@@ -83,15 +83,15 @@ public class Ship : Moveable
 
     }
 
-    public override void Move()
+    public override bool Move()
 	{
         if(isDocked && Cargo < 8)
         {
-            //not allowed to move
+            return true;
         }
         else
         {
-            Position.TryMove(this);
+            return Position.TryMove(this);
         }
 	}
 

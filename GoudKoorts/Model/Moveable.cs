@@ -20,7 +20,7 @@ public abstract class Moveable
 
     public abstract char Icon();
 
-    public abstract void Move();
+    public abstract bool Move();
 
     public abstract void Empty();
 

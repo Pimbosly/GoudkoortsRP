@@ -44,10 +44,9 @@ public class Cart : Moveable
         }
     }
 
-    public override void Move()
+    public override bool Move()
 	{
-        Position.TryMove(this);
-        
+        return Position.TryMove(this);
 	}
 
 }

@@ -51,20 +51,15 @@ public class Game
 
 	public virtual void addCart(Warehouse warehouse)
 	{
-        //Cart k = new Cart(warehouse);
-        //warehouse.Moveable.Add(k);
-        //Moveable.Add(k);
-        Cart k = new Cart(Warehouse[0]);
-        Warehouse[0].Moveable.Add(k);
+        Cart k = new Cart(warehouse);
+        warehouse.Moveable.Add(k);
         Moveable.Add(k);
+    }
 
-        //Cart a = new Cart(Warehouse[1]);
-        //Warehouse[1].Moveable.Add(a);
-        //Moveable.Add(a);
-
-        Cart b = new Cart(Warehouse[2]);
-        Warehouse[2].Moveable.Add(b);
-        Moveable.Add(b);
+    public virtual void moveCart(Warehouse warehouse, Cart cart)
+    {
+        warehouse.Moveable.Add(cart);
+        cart.Position = warehouse;
     }
 
     public virtual Warehouse randomWarehouse()
@@ -79,11 +74,11 @@ public class Game
 
         if (Score == 0)
         {
-            return 5000;
+            return 3000;
         }
         else
         {
-            return 5000 / (Score + 9) * 9;
+            return 3000 / (Score + 9) * 9;
         }
         
     }
@@ -195,7 +190,7 @@ public class Game
         Warehouse.Add((Warehouse)_track[0, 5]);
         Warehouse.Add((Warehouse)_track[0, 7]);
 
-        //testKAR
+        //firstcar
         addCart(randomWarehouse());
 
         //water
@@ -212,11 +207,25 @@ public class Game
         _track[10, 0] = new NormalTrack();
         _track[11, 0] = new NormalTrack();
 
+        NextWater(_track[0, 0], _track[1, 0]);
+        NextWater(_track[1, 0], _track[2, 0]);
+        NextWater(_track[2, 0], _track[3, 0]);
+        NextWater(_track[3, 0], _track[4, 0]);
+        NextWater(_track[4, 0], _track[5, 0]);
+        NextWater(_track[5, 0], _track[6, 0]);
+        NextWater(_track[6, 0], _track[7, 0]);
+        NextWater(_track[7, 0], _track[8, 0]);
+        NextWater(_track[8, 0], _track[9, 0]);
+        NextWater(_track[9, 0], _track[10, 0]);
+        NextWater(_track[10, 0], _track[11, 0]);
+        NextWater(_track[11, 0], _track[0, 0]);
+
         _track[9, 0].Moveable.Add(new Ship());
         Moveable.Add(_track[9, 0].Moveable[0]);
         Dock dock = (Dock)_track[9, 1];
         dock.S = (Ship)_track[9, 0].Moveable[0];
         ship = dock.S;
+        ship.Position = _track[9, 0];
 
         NextTrack(Warehouse[2], _track[1, 7]);
         NextTrack(Warehouse[2], _track[2, 7]);
@@ -308,6 +317,12 @@ public class Game
         }
         T.NextTrack = t;
         t.PreviousTrack = T;
+    }
+
+    public void NextWater(Track one, Track two)
+    {
+        one.NextTrack = two;
+        two.PreviousTrack = one;
     }
 
 }

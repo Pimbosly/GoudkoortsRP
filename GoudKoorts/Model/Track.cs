@@ -43,8 +43,6 @@ public abstract class Track
 
 	public virtual bool nextIsPrevious(Track track)
 	{
-        if (NextTrack == null)
-        {
             if (track.NextTrack.PreviousTrack == track)
             {
                 return true;
@@ -53,7 +51,8 @@ public abstract class Track
             {
                 return false;
             }
-        }
+        
+
 	}
 
     public virtual void CheckTooMuch()
@@ -70,19 +69,32 @@ public abstract class Track
 
 	public virtual bool TryMove(Moveable moveable)
 	{
-		if(nextIsPrevious(this))
+        if (this.NextTrack != null)
         {
-            moveable.Position = NextTrack;
-            NextTrack.Moveable.Add(moveable);
-            NextTrack.CheckTooMuch();
+            if (nextIsPrevious(this))
+            {
+                moveable.Position = NextTrack;
+                NextTrack.Moveable.Add(moveable);
+                NextTrack.CheckTooMuch();
 
-            Moveable.Remove(moveable);
-            CheckTooMuch();
+                Moveable.Remove(moveable);
+                CheckTooMuch();
 
-            return true;
+                return true;
+            }
+            else
+            {
+                return true; 
+            }
         }
         else
         {
+            moveable.Position = null;
+            if(moveable.isFull != true)
+            {
+                moveable.isFull = true;
+            }
+            Moveable.Remove(moveable);
             return false;
         }
 	}
