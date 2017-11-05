@@ -58,9 +58,9 @@ public class Game
         Warehouse[0].Moveable.Add(k);
         Moveable.Add(k);
 
-        Cart a = new Cart(Warehouse[1]);
-        Warehouse[1].Moveable.Add(a);
-        Moveable.Add(a);
+        //Cart a = new Cart(Warehouse[1]);
+        //Warehouse[1].Moveable.Add(a);
+        //Moveable.Add(a);
 
         Cart b = new Cart(Warehouse[2]);
         Warehouse[2].Moveable.Add(b);
@@ -83,7 +83,7 @@ public class Game
         }
         else
         {
-            return 5000 / (Score + 9) * 9;
+            return 500 / (Score + 9) * 9;
         }
         
     }
