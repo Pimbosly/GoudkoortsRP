@@ -91,6 +91,7 @@ public class Game
     {
         foreach(Moveable m in Moveable)
         {
+            //points improvement
             Score = Score + m.Position.CollectPoints();
             if(m.Position.IsTooMuch)
             {

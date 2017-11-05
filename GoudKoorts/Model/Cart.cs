@@ -46,10 +46,8 @@ public class Cart : Moveable
 
     public override void Move()
 	{
-        if(Position.TryMove(this))
-        {
-            Position = Position.NextTrack;
-        }
+        Position.TryMove(this);
+        
 	}
 
 }
