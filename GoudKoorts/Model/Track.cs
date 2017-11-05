@@ -43,14 +43,16 @@ public abstract class Track
 
 	public virtual bool nextIsPrevious(Track track)
 	{
-        //if next track == null
-		if(track.NextTrack.PreviousTrack == track)
+        if (NextTrack == null)
         {
-            return true;
-        }
-        else
-        {
-            return false;
+            if (track.NextTrack.PreviousTrack == track)
+            {
+                return true;
+            }
+            else
+            {
+                return false;
+            }
         }
 	}
 

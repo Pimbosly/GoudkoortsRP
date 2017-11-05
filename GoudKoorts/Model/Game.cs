@@ -216,6 +216,7 @@ public class Game
         Moveable.Add(_track[9, 0].Moveable[0]);
         Dock dock = (Dock)_track[9, 1];
         dock.S = (Ship)_track[9, 0].Moveable[0];
+        ship = dock.S;
 
         NextTrack(Warehouse[2], _track[1, 7]);
         NextTrack(Warehouse[2], _track[2, 7]);
