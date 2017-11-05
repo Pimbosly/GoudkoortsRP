@@ -43,9 +43,9 @@ public class Merge : Switch
 
     public override void swapNext()
     {
-        Track tempPrevious2 = NextTrack;
-        PreviousTrack = tempPrevious;
-        tempPrevious = tempPrevious2;
+        Track tempPrevious2 = tempPrevious;
+        tempPrevious = PreviousTrack;
+        PreviousTrack = tempPrevious2;
     }
 }
 

@@ -23,21 +23,28 @@ public class Split : Switch
     }
     public override char Icon()
     {
-        if(isOpen)
+        if (Moveable.Count == 0)
         {
-            return '/';
+            if (isOpen)
+            {
+                return '\\';
+            }
+            else
+            {
+                return '/';
+            }
         }
         else
         {
-            return '\\';
+            return Moveable[0].Icon();
         }
     }
 
     public override void swapNext()
     {
-        Track tempNext2 = NextTrack;
-        NextTrack = tempNext;
-        tempNext = tempNext2;
+        Track tempNext2 = tempNext;
+        tempNext = NextTrack;
+        NextTrack = tempNext2;
     }
 
     public override int CollectPoints()
