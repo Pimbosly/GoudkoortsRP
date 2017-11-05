@@ -31,10 +31,10 @@ public class Ship : Moveable
     }
     public bool AddCargo()
     {
-        if(Cargo < 8)
+        if(Cargo < 2)
         {
             Cargo++;
-            if(Cargo == 8)
+            if(Cargo == 2)
             {
                 isFull = true;
             }
