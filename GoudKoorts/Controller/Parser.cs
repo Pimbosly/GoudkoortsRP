@@ -9,8 +9,8 @@ namespace GoudKoorts.Controller
 {
     class Parser
     {
-        string path;
-        private FileStream _inputStream;
+        //string path;
+        //private FileStream _inputStream;
         private StreamReader _streamReader;
 
         public Parser()

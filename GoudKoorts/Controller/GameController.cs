@@ -107,6 +107,10 @@ public class GameController
                         foreach (Moveable m in g.Moveable)
                         {
                             m.Move();
+                            if (m.Position == g._track[9, 1])
+                            {
+                                g.atDock(m);
+                            }
                         }
                     }
                 }
@@ -179,6 +183,9 @@ public class GameController
     public void printBoard()
     {
         output.printLevel();
+        Console.WriteLine(g.Score);
+        Console.WriteLine(g.Speed() / 100);
+        Console.WriteLine("");
         string s = "";
         for (int y = 0; y < 10; y++)
         {

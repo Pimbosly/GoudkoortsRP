@@ -36,13 +36,16 @@ public class Dock : Track
         }
     }
 
-    public void EmptyCart(Cart c)
+    public bool EmptyCart(Cart c)
     {
         if (S.isDocked)
         {
             c.Empty();
             S.AddCargo();
+            return true;
         }
+
+        return false;
     }
 
 

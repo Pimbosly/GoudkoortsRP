@@ -17,6 +17,7 @@ public class Game
 
     public Boolean gameOver;
     public int Score;
+
     
    // public int Speed = 5000;
 
@@ -82,7 +83,7 @@ public class Game
         }
         else
         {
-            return 5000 / Score * 9;
+            return 5000 / (Score + 9) * 9;
         }
         
     }
@@ -104,6 +105,23 @@ public class Game
         return false;
     }
 
+    public void atDock(Moveable m)
+    { 
+        Cart c;
+
+        c = (Cart)m;
+        Dock d = (Dock)m.Position;
+
+        if (d.EmptyCart(c))
+        {
+            Score++;
+            if (ship.isFull)
+            {
+                Score = Score + 10;
+            }
+        }
+            
+    }
     public void fillField()
     {
         Switch c;
