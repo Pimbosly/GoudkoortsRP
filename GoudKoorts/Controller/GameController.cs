@@ -22,7 +22,7 @@ public class GameController
 
     public GameController()
     {
-        _carcount = 5;
+        _carcount = 4;
         g = new Game();
         loadMainMenu();
     }
@@ -112,8 +112,17 @@ public class GameController
                         if (m.Position == g._track[9, 1])
                         {
                             g.atDock(m);
-                        }                       
+                        }  
+                        if (m.Position == g._track[9,0])
+                        {
+                            if (g.ship.isFull)
+                            {
+                                g.ship.Empty();
+                                _carcount++;
+                            }
+                        }                     
                     }
+                    g.CollisionCheck();
                     turncount--;
                     if (turncount == 0)
                     {

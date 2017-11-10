@@ -40,9 +40,9 @@ public class RangeArea : Track
         {
             if (NextTrack.Moveable.Count() == 0)
             {
+                moveable.Position = NextTrack;
                 NextTrack.Moveable.Add(moveable);
                 Moveable.Remove(moveable);
-                CheckTooMuch();
                 return true;
             }
         }

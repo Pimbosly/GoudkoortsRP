@@ -11,30 +11,24 @@ using System.Text;
 
 public class Ship : Moveable
 {
+    private static int maxcargo = 8;
 	public int Cargo
 	{
 		get;
 		set;
 	}
 
-    public bool isDocked
-    {
-        get;
-        set;
-    }
-
     public Ship()
     {
         Cargo = 0;
-        isDocked = true;
         isFull = false;
     }
     public bool AddCargo()
     {
-        if(Cargo < 2)
+        if(!isFull)
         {
             Cargo++;
-            if(Cargo == 2)
+            if(Cargo == maxcargo)
             {
                 isFull = true;
             }
@@ -85,7 +79,7 @@ public class Ship : Moveable
 
     public override bool Move()
 	{
-        if(isDocked && Cargo < 8)
+        if(!isFull)
         {
             return true;
         }

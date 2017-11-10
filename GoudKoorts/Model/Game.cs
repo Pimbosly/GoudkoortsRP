@@ -83,21 +83,17 @@ public class Game
         
     }
 
-    public bool CollisionCheck()
+    public void CollisionCheck()
     {
         foreach(Moveable m in Moveable)
         {
-            //points improvement
-            Score = Score + m.Position.CollectPoints();
             if(m.Position.IsTooMuch)
             {
                 //collision
                 gameOver = true;
-                return true;
             }
         }
         //no collision
-        return false;
     }
 
     public void atDock(Moveable m)
@@ -117,6 +113,7 @@ public class Game
         }
             
     }
+
     public void fillField()
     {
         Switch c;

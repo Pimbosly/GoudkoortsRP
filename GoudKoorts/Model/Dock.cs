@@ -38,7 +38,7 @@ public class Dock : Track
 
     public bool EmptyCart(Cart c)
     {
-        if (S.isDocked)
+        if (!S.isFull)
         {
             c.Empty();
             S.AddCargo();
