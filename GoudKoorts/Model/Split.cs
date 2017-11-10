@@ -47,9 +47,5 @@ public class Split : Switch
         NextTrack = tempNext2;
     }
 
-    public override int CollectPoints()
-    {
-        return 0;
-    }
 }
 

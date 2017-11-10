@@ -16,13 +16,6 @@ public class Dock : Track
         get;
         set;
     }
-    public override int CollectPoints()
-    {
-        //return 10 at full ship
-        //return 1 at 1 cart
-        //TODO
-        return 0;
-    }
 
     public override char Icon()
     {

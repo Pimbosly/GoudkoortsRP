@@ -17,10 +17,6 @@ public class RangeArea : Track
 		set;
 	}
 
-    public override int CollectPoints()
-    {
-        return 0;
-    }
 
     public override char Icon()
     {

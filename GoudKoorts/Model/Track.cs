@@ -98,8 +98,5 @@ public abstract class Track
             return false;
         }
 	}
-
-    public abstract int CollectPoints();
-
 }
 

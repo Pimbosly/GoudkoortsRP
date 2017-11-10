@@ -12,8 +12,6 @@ using System.Text;
 
 public class GameController
 {
-
-    Parser parser;
     Output output = new Output();
     Input input = new Input();
     System.Threading.Thread A;
@@ -23,6 +21,8 @@ public class GameController
     public GameController()
     {
         _carcount = 4;
+        A = new System.Threading.Thread(new
+        System.Threading.ThreadStart(Play));
         g = new Game();
         loadMainMenu();
     }
@@ -59,7 +59,6 @@ public class GameController
             ConsoleKeyInfo cki = input.askInputKey();
             if (cki.KeyChar == cki.KeyChar)
             {
-                    parser = new Parser();
                     mainMenu = false;
                     StartGame();
             }
@@ -68,27 +67,23 @@ public class GameController
     }
     public virtual void StartGame()
     {
-
-        A = new System.Threading.Thread(new
+        if(!A.IsAlive)
+        {
+            A = new System.Threading.Thread(new
         System.Threading.ThreadStart(Play));
+            A.Start();
+        }
 
-        A.Start();
         if (g.gameOver == true)
         {
             g.gameOver = false;
         }
+        
         while (!g.gameOver)
         {
             handleInput(input.askInputKey().Key);
         }
-
-        if (A.IsAlive)
-        {
-            A.Abort();
-        }
-
-
-
+        Quit();
     }
 
     public void Play()
@@ -122,7 +117,6 @@ public class GameController
                             }
                         }                     
                     }
-                    g.CollisionCheck();
                     turncount--;
                     if (turncount == 0)
                     {
@@ -132,16 +126,13 @@ public class GameController
                         }
                         turncount = 4;
                     }
+                    if (g.CollisionCheck())
+                    {
+                        g.gameOver = true;
+                    }
                 }
             }
         }
-
-        Quit();
-
-            
-            
-
-
     }
     public void handleInput(ConsoleKey input)
     {
@@ -172,10 +163,8 @@ public class GameController
                     break;
                 case ConsoleKey.Q:
                     g.gameOver = true;
-                    Quit();
                     break;
                 default:
-                    Console.WriteLine("Invalid input");
                     break;
             }
 
@@ -183,11 +172,7 @@ public class GameController
         }
     }
 
-    public void gameOver()
-    {
-        output.printEnd();
 
-    }
     public void Quit()
     {
         output.printEnd();
@@ -197,8 +182,6 @@ public class GameController
         ConsoleKeyInfo cki = input.askInputKey();
         g = new Game();
         loadMainMenu();
-
-
     }
 
     public void printBoard()

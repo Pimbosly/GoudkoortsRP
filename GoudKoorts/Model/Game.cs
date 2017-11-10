@@ -74,26 +74,27 @@ public class Game
 
         if (Score == 0)
         {
-            return 3000;
+            return 1000;
         }
         else
         {
-            return 3000 / (Score + 9) * 9;
+            return 1000 / (Score + 9) * 9;
         }
         
     }
 
-    public void CollisionCheck()
+    public bool CollisionCheck()
     {
         foreach(Moveable m in Moveable)
         {
             if(m.Position.IsTooMuch)
             {
                 //collision
-                gameOver = true;
+                return true;
             }
         }
         //no collision
+        return false;
     }
 
     public void atDock(Moveable m)

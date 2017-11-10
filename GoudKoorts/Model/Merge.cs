@@ -17,11 +17,6 @@ public class Merge : Switch
 		set;
 	}
 
-    public override int CollectPoints()
-    {
-        return 0;
-    }
-
     public override char Icon()
     {
         if (Moveable.Count == 0)
