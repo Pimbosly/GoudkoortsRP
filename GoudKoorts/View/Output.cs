@@ -37,6 +37,7 @@ public class Output
         Console.WriteLine("└────────────┘");
         Console.WriteLine("─────────────────────────────────────────────");
         Console.WriteLine("");
+        Console.WriteLine("Press: 'Q' if you want to quit the game");
         Console.WriteLine("Use Numpad ( 4 | 5 | 6 )");
         Console.WriteLine("Use Numpad (   | 2 | 3 )");
         Console.WriteLine();

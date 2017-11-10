@@ -4,7 +4,6 @@
 //     Changes to this file will be lost if the code is regenerated.
 // </auto-generated>
 //------------------------------------------------------------------------------
-using GoudKoorts.Controller;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -178,7 +177,7 @@ public class GameController
         output.printEnd();
         Console.WriteLine("Your score is: " + g.Score);
         Console.WriteLine("");
-        Console.WriteLine("Press any key to continu");
+        Console.WriteLine("Press any key to continue");
         ConsoleKeyInfo cki = input.askInputKey();
         g = new Game();
         loadMainMenu();
@@ -188,7 +187,7 @@ public class GameController
     {
         output.printLevel();
         Console.WriteLine("Your score = " + g.Score);
-        Console.WriteLine(g.Speed() / 100);
+        Console.WriteLine("Your speed in milliseconds = " + g.Speed() / 10);
         Console.WriteLine("");
         string s = "";
         for (int y = 0; y < 10; y++)
