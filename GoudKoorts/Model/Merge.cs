@@ -19,20 +19,29 @@ public class Merge : Switch
 
     public override char Icon()
     {
-        if (Moveable.Count == 0)
+        try
         {
-            if (isOpen)
+
+
+            if (Moveable.Count == 0)
             {
-                return '\\';
+                if (isOpen)
+                {
+                    return '\\';
+                }
+                else
+                {
+                    return '/';
+                }
             }
             else
             {
-                return '/';
+                return Moveable[0].Icon();
             }
         }
-        else
+        catch
         {
-            return Moveable[0].Icon();
+            throw new System.Exception();
         }
     }
 

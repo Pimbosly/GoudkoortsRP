@@ -85,6 +85,27 @@ public class GameController
         Quit();
     }
 
+    public virtual void endgame()
+    {
+        if (!A.IsAlive)
+        {
+            A = new System.Threading.Thread(new
+        System.Threading.ThreadStart(Play));
+            A.Start();
+        }
+
+        if (g.gameOver == true)
+        {
+            g.gameOver = false;
+        }
+
+        while (!g.gameOver)
+        {
+            handleInput(input.askInputKey().Key);
+        }
+        Quit();
+    }
+
     public void Play()
     {
         int turncount = 4;
