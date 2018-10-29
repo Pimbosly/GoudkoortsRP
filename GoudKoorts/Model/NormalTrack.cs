@@ -13,13 +13,20 @@ public class NormalTrack : Track
 {
     public override char Icon()
     {
-        if(Moveable.Count == 0)
+        try
         {
-            return '-';
+            if (Moveable.Count == 0)
+            {
+                return '----';
+            }
+            else
+            {
+                return Moveable[0].Icon();
+            }
         }
-        else
+        catch
         {
-            return Moveable[0].Icon();
+            throw new System.EntryPointNotFoundException();
         }
     }
 }

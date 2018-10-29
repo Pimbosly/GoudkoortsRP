@@ -31,6 +31,7 @@ public abstract class Switch : Track
         else
         {
             isOpen = true;
+            swapNext();
         }
         swapNext();
     }

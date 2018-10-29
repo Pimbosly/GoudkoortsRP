@@ -15,7 +15,7 @@ public class Warehouse : Track
     {
         if (Moveable.Count == 0)
         {
-            return 'W';
+            return 'K';
         }
         else
         {
